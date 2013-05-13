@@ -88,14 +88,8 @@
   vertical-align: bottom;
 }
 
-.header--name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
-}
-
 .header--site-name { /* The name of the website */
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
+  @include element-invisible;
 }
 
 .header--site-link { /* The link around the name of the website */
