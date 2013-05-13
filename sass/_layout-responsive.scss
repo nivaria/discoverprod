@@ -10,7 +10,7 @@
  */
 
 
-// We are going to create a 980px wide, 5 column grid with 20px gutters between
+// We are going to create a 980px wide, 12 column grid with 20px gutters between
 // columns (applied as 10px of left/right padding on each column).
 $zen-column-count:  12;
 $zen-gutter-width:  20px;
@@ -36,9 +36,19 @@ $zen-auto-include-item-base: false;
 .region-bottom {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */
+/*
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+*/
+}
+
+.fixed-width-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*
@@ -65,6 +75,11 @@ $zen-auto-include-item-base: false;
   @include zen-grid-container();
 }
 
+#header,
+#footer {
+  background-color: $headings-color;
+}
+
 /*
  * Navigation bar
  */
@@ -75,8 +90,6 @@ $zen-auto-include-item-base: false;
     position: relative;
   }
   #navigation {
-    position: absolute;
-    top: 0; /* Move the navbar up inside #main's padding. */
     height: $nav-height;
     width: $zen-grid-width;
   }
