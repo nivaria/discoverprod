@@ -116,6 +116,7 @@ audio:not([controls]) {
  */
 
 html {
+  color: $text-color;
   font-family: $base-font-family; /* 1 */
   font-size: 100% * ($base-font-size / 16px); /* 3 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -143,6 +144,7 @@ html {
  */
 
 body {
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
