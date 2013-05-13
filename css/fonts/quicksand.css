@@ -3,7 +3,7 @@
  */
 
 @font-face {
-    font-family: 'QuicksandBold';
+    font-family: 'Quicksand';
     src: url('Quicksand_Bold-webfont.eot');
     src: url('Quicksand_Bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('Quicksand_Bold-webfont.woff') format('woff'),
@@ -19,7 +19,7 @@
  */
 
 @font-face {
-    font-family: 'QuicksandLight';
+    font-family: 'Quicksand';
     src: url('Quicksand_Light-webfont.eot');
     src: url('Quicksand_Light-webfont.eot?#iefix') format('embedded-opentype'),
          url('Quicksand_Light-webfont.woff') format('woff'),
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: 'QuicksandLightOblique';
+    font-family: 'Quicksand';
     src: url('Quicksand_Light_Oblique-webfont.eot');
     src: url('Quicksand_Light_Oblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('Quicksand_Light_Oblique-webfont.woff') format('woff'),
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-    font-family: 'QuicksandBook';
+    font-family: 'Quicksand';
     src: url('Quicksand_Book-webfont.eot');
     src: url('Quicksand_Book-webfont.eot?#iefix') format('embedded-opentype'),
          url('Quicksand_Book-webfont.woff') format('woff'),
@@ -55,7 +55,7 @@
 }
 
 @font-face {
-    font-family: 'QuicksandBookOblique';
+    font-family: 'Quicksand';
     src: url('Quicksand_Book_Oblique-webfont.eot');
     src: url('Quicksand_Book_Oblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('Quicksand_Book_Oblique-webfont.woff') format('woff'),
@@ -67,7 +67,7 @@
 }
 
 @font-face {
-    font-family: 'QuicksandBoldOblique';
+    font-family: 'Quicksand';
     src: url('Quicksand_Bold_Oblique-webfont.eot');
     src: url('Quicksand_Bold_Oblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('Quicksand_Bold_Oblique-webfont.woff') format('woff'),
