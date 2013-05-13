@@ -254,6 +254,10 @@ h6 {
   @include trailer(1, $h6-font-size);
 }
 
+#{headings()} {
+  font-family: $headings-font;
+}
+
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */

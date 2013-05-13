@@ -36,8 +36,15 @@
 // variable for a couple edge cases. We include it for completeness sake. See
 // the documentation at http://compass-style.org/reference/compass/support/
 $legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
+$legacy-support-for-ie7: true;
 $legacy-support-for-ie8: true;
+
+
+// Support for IE7
+
+// The box-sizing polyfill for IE6/7 requires an absolute path to the
+// boxsizing.htc file. See https://github.com/Schepp/box-sizing-polyfill
+$box-sizing-polyfill-path: "/sites/all/themes/discoverprod/boxsizing.htc";
 
 
 //
@@ -49,15 +56,16 @@ $legacy-support-for-ie8: true;
 // use in the normalize.scss file.
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
-$base-font-size:   16px; // The font size set on the root html element.
-$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+$base-font-size:   14px; // The font size set on the root html element.
+$base-line-height: 20px; // This line-height determines the basic unit of vertical rhythm.
 
-$h1-font-size: 2    * $base-font-size;
-$h2-font-size: 1.5  * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
-$h4-font-size: 1    * $base-font-size;
-$h5-font-size: 0.83 * $base-font-size;
-$h6-font-size: 0.67 * $base-font-size;
+$h1-font-size: 34px;
+$h2-font-size: 26px;
+$h3-font-size: 20px;
+$h4-font-size: 16px;
+$h5-font-size: 14px;
+$h6-font-size: 12px;
+
 
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu
@@ -79,15 +87,14 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
-
-// For an explanation of why "sans-serif" is at the end of this list, see
-// http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+$quicksand:       "Quicksand", "Helvetica Rounded", Arial, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family: $arial; // The font family set on the html element.
+$font-body:        $arial;
 $font-monospace:   $courier;
+$headings-font:    $quicksand;
 
 
 //
