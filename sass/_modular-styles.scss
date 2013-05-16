@@ -141,17 +141,17 @@
       li {
         margin: 0;
         padding: 0;
+        padding: 7px 20px;
         a {
           color: $white;
           display: inline-block;
-          padding: 7px 20px;
           text-decoration: none;
           @include transition(color 0.3s ease-in-out);
         }
-        &.first a {
+        &.first {
           padding-left: 0;
         }
-        &.last a {
+        &.last {
           padding-right: 0;
         }
         &.active a,
