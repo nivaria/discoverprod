@@ -105,3 +105,18 @@ tr.selected td {
     }
   }
 }
+
+/* =============================================================================
+   User menu dropdowns
+   ========================================================================== */
+
+.header--region {
+  .menu-links {
+    height: 0;
+    overflow: hidden;
+    @include transition(height 0.5s);
+    &.active {
+      height: auto;
+    }
+  }
+}
