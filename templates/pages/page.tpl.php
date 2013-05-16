@@ -14,7 +14,9 @@
 
     <div class="fixed-width-container">
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header--logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header--logo-image" /></a>
+        <div  class="header--logo" id="logo">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header--logo-image" /></a>
+        </div>
       <?php endif; ?>
 
       <?php if ($site_name): ?>
@@ -24,6 +26,8 @@
       <?php endif; ?>
 
       <?php print render($page['header']); ?>
+
+      <?php print render($page['top_search']); ?>
 
       <div id="navigation">
 
@@ -47,8 +51,6 @@
             )); ?>
           </nav>
         <?php endif; ?>
-
-        <?php print render($page['navigation']); ?>
 
       </div>
 
