@@ -200,8 +200,9 @@ $zen-column-count: 16;
 
   .header--region {
     position: absolute;
+    right: 30px;
+    width: 25%;
     top: 0;
-    @include zen-grid-item(4, 13);
   }
 
   .region-top-search {
@@ -214,6 +215,11 @@ $zen-column-count: 16;
       left: 20px;
       top: 16px;
     }
+  }
+
+  #block-discover-generic-user-block {
+    float: right;
+    margin: 16px 0 0;
   }
 
   #navigation {
