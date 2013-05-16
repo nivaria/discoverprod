@@ -164,6 +164,33 @@
 }
 
 /* =============================================================================
+   User menu
+   ========================================================================== */
+
+.user_picture,
+.user-cart,
+.user-comments,
+#language-menu-link {
+  display: inline-block;
+  background: transparent url(../images/user-menu-sprite.png) no-repeat -1px 0;
+  width: 37px;
+  height: 27px;
+}
+
+.user_picture {
+  background-position: -125px 0;
+}
+
+.user-cart {
+   background-position: -81px 0;
+}
+
+.user-comments {
+  background-position: -42px 0;
+}
+
+
+/* =============================================================================
    Breadcrumb navigation
    ========================================================================== */
 
