@@ -199,7 +199,7 @@ $zen-column-count: 16;
 
   .header--region {
     position: absolute;
-    top: 10px;
+    top: 0;
     @include zen-grid-item(4, 13);
   }
 
