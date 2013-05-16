@@ -51,6 +51,21 @@ $zen-auto-include-item-base: false;
   padding-right: 20px;
 }
 
+#header {
+}
+
+#footer {
+  padding: 30px 0;
+}
+
+/*
+ * Apply relative position for the header
+ */
+
+#header .fixed-width-container {
+  position: relative;
+}
+
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
@@ -85,13 +100,9 @@ $zen-auto-include-item-base: false;
  */
 
 @media all and (min-width: 480px) {
-  #main {
-    padding-top: $nav-height; /* Move all the children of #main down to make room. */
-    position: relative;
-  }
   #navigation {
     height: $nav-height;
-    width: $zen-grid-width;
+    text-align: center;
   }
 }
 
@@ -102,7 +113,7 @@ $zen-auto-include-item-base: false;
  */
 $zen-column-count: 3;
 
-@media all and (min-width: 480px) and (max-width: 959px) {
+@media all and (min-width: 480px) and (max-width: 979px) {
 
   /*
    * The layout when there is only one sidebar, the left one.
@@ -170,9 +181,38 @@ $zen-column-count: 3;
 /*
  * Use 5 grid columns for larger screens.
  */
-$zen-column-count: 5;
+$zen-column-count: 16;
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 980px) {
+
+  .header--logo {
+    .not-front & {
+      @include zen-grid-flow-item(4, 16);
+
+    }
+    .front & {
+      text-align: center;
+    }
+  }
+
+  .header--region {
+    @include zen-grid-item(4, 13);
+    position: absolute;
+    top: 10px;
+  }
+
+  #navigation {
+    .not-front & {
+      bottom: 0;
+      position: absolute;
+      @include zen-grid-item(8, 5);
+      text-align: left;
+    }
+    .front & {
+      text-align: center;
+    }
+  }
+
 
   /*
    * The layout when there is only one sidebar, the left one.
@@ -180,11 +220,11 @@ $zen-column-count: 5;
 
   .sidebar-first {
     #content { /* Span 4 columns, starting in 2nd column from left. */
-      @include zen-grid-item(4, 2);
+      @include zen-grid-item(12, 5);
     }
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(1, 1);
+      @include zen-grid-item(4, 1);
     }
   }
 
@@ -194,11 +234,11 @@ $zen-column-count: 5;
 
   .sidebar-second {
     #content { /* Span 4 columns, starting in 1st column from left. */
-      @include zen-grid-item(4, 1);
+      @include zen-grid-item(12, 1);
     }
 
     .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(1, 5);
+      @include zen-grid-item(4, 13);
     }
   }
 
@@ -208,15 +248,15 @@ $zen-column-count: 5;
 
   .two-sidebars {
     #content { /* Span 3 columns, starting in 2nd column from left. */
-      @include zen-grid-item(3, 2);
+      @include zen-grid-item(8, 5);
     }
 
     .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(1, 1);
+      @include zen-grid-item(4, 1);
     }
 
     .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(1, 5);
+      @include zen-grid-item(4, 13);
     }
   }
 }
