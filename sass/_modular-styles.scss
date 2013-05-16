@@ -80,7 +80,6 @@
 
 .header--logo { /* Wrapping link for logo */
   margin: 0;
-  padding: 16px 0;
   display: block;
 }
 
@@ -114,10 +113,6 @@
   float: right;
 }
 
-.header--region { /* Wrapper for any blocks placed in the header region */
-  clear: both; /* Clear the logo */
-}
-
 /* =============================================================================
    Navigation bar
    ========================================================================== */
@@ -138,7 +133,8 @@
   }
 
   #main-menu { /* Menu block links */
-    margin: 10px 0;
+    margin: 0;
+    padding: 8px 0;
     ul.links {
       margin: 0;
       padding: 0;
