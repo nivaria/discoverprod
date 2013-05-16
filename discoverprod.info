@@ -87,7 +87,7 @@ stylesheets[all][] = css/styles.css
 ;   <?php print $header_top; ?>
 
 regions[header]         = Header
-regions[navigation]     = Navigation bar
+regions[top_search]     = Top search bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content

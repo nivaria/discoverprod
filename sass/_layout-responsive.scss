@@ -74,6 +74,7 @@ $zen-auto-include-item-base: false;
 #header,
 #content,
 #navigation,
+.region-top-search,
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
@@ -201,6 +202,18 @@ $zen-column-count: 16;
     position: absolute;
     top: 0;
     @include zen-grid-item(4, 13);
+  }
+
+  .region-top-search {
+    .not-front & {
+      @include zen-grid-item(4, 5);
+      margin-top: 16px;
+    }
+    .front & {
+      position: absolute;
+      left: 20px;
+      top: 16px;
+    }
   }
 
   #navigation {
