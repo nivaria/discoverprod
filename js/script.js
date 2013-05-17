@@ -12,8 +12,40 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
+  $(document).ready(function() {
 
-// Place your code here.
+
+    $('#block-discover-generic-user-block .menu-hook').click(
+      // Trigger event on click
+      function () {
+        var submenu = $(this).next(".menu-links");
+        if (submenu.is(":visible")) {
+          submenu.fadeOut();
+          $(this).removeClass("active_menu");
+          submenu.children(".close-menu-link").remove();
+        } else {
+          submenu.fadeIn();
+          $(this).addClass("active_menu").next(".menu-links").append('<div class="close-menu-link"></div');
+        }
+      }
+    );
+
+    $(".close-menu-link").live("click",
+      function() {
+        $(this).parent().prev(".menu-hook").removeClass("active_menu");
+        $(this).parent(".menu-links").fadeOut();
+        $(this).remove()
+      }
+    );
+
+/*
+    // Hide submenu on mouseleave
+    $('#block-discover-generic-user-block .menu-links').mouseleave(function() {
+      $(this).fadeOut().prev(".menu-hook").removeClass('active_menu');
+    });
+*/
+
+  });
 
 
 })(jQuery, Drupal, this, this.document);
