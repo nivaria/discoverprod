@@ -167,15 +167,16 @@ $tabs-border: #bbb;
   color: #fff;
   background-color: $background-color;
   border: 0;
+  display: inline-block;
   font-family: $headings-font;
   font-weight: bold;
   text-decoration: none;
   @include border-radius(0);
   &:hover {
-    background-color: lighten($background-color, 10%);
+    background-color: lighten($background-color, 6%);
   }
   &:active {
-    background-color: darken($background-color, 10%);
+    background-color: darken($background-color, 6%);
     color: #ddd;
   }
 }
@@ -189,6 +190,7 @@ $tabs-border: #bbb;
 @mixin size-login {
   font-size: 13px;
   padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 @mixin size-medium {
@@ -208,7 +210,7 @@ $tabs-border: #bbb;
 
 @mixin size-large-50 {
   font-size: 16px;
-  padding: 15px 25px;
+  padding: 15px 40px;
 }
 
 

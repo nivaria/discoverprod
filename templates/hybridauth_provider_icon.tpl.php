@@ -1,1 +1,1 @@
-<span class="hybridauth-icon hybridauth-<?php print drupal_strtolower($provider_id); ?>" title="<?php print $provider_name; ?>"></span>
+<div class="hybridauth-wrapper provider-<?php print drupal_strtolower($provider_id); ?> clearfix"><span class="hybridauth-icon hybridauth-<?php print drupal_strtolower($provider_id); ?>" title="<?php print $provider_name; ?>"></span><?php print t('Enter with'); ?> <?php print $provider_name; ?></div>

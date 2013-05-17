@@ -202,6 +202,10 @@
 .header--region {
   #block-discover-generic-user-block {
     position: relative;
+    .ajax-register-links li {
+      margin: 0;
+      padding: 0 0 0 8px;
+    }
   }
   .user_picture_wrapper,
   .user-cart,
@@ -928,6 +932,9 @@ div.custom-ajax-register-modal {
     .form-item {
       margin: 10px 0;
     }
+    .form-text {
+      font-style: italic;
+    }
     .ajax-register-links-wrapper {
       background-color: #E6E6E6;
       font-size: 16px;
@@ -953,12 +960,76 @@ div.custom-ajax-register-modal {
         position: absolute;
         left: 0;
         bottom: 0;
+        right: 0;
+        .ajax-register-links {
+          text-align: right;
+          li {
+            padding: 0 0 0 10px;
+            &.first a {
+              margin-left: 20px;
+            }
+          }
+        }
         .item-list {
           float: none;
           top: auto;
           left: auto;
+          right: auto;
+          .last a.password {
+            font-size: 11px;
+            color: #999;
+            text-decoration: none;
+          }
         }
       }
+    }
+    #user-register-form {
+      padding: 10px 80px 50px 80px;
+      @include clearfix;
+
+      #edit-account {
+        padding: 10px 0 30px 0;
+        @include clearfix;
+        .form-text {
+          width: 47%;
+        }
+        .username {
+          width: 100%;
+        }
+        .password-field {
+          float: left;
+        }
+        .password-confirm {
+          float: right;
+        }
+      }
+      #edit-field-legal {
+        display: block;
+        float: left;
+        font-size: 12px;
+        width: 325px;
+      }
+      .form-actions {
+        display: block;
+        float: right;
+      }
+      .form-submit {
+        text-align: center;
+        text-transform: uppercase;
+        width: 180px;
+      }
+      .hybridauth-widget {
+        clear: both;
+        padding-top: 30px;
+        li {
+          width: 47%;
+          float: left;
+          &:nth-child(even) {
+            float: right;
+          }
+        }
+      }
+
     }
   }
 }
@@ -1007,3 +1078,28 @@ div.custom-ajax-register-modal {
 /* =============================================================================
    Special Buttons
    ========================================================================== */
+
+#block-discover-generic-user-block .ajax-register-links .first a {
+  @include button($primary-color);
+  @include size-regular;
+}
+
+#block-discover-generic-user-block .ajax-register-links .last a {
+  @include button($secondary-color);
+  @include size-regular;
+}
+
+div.custom-ajax-register-modal #user-login .form-submit {
+  @include button($secondary-color);
+  @include size-login;
+}
+
+div.custom-ajax-register-modal #user-login .ajax-register-links .first a {
+  @include button($primary-color);
+  @include size-login;
+}
+
+div.custom-ajax-register-modal #user-register-form .form-submit {
+  @include button($primary-color);
+  @include size-large-50;
+}
