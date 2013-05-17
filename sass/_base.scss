@@ -161,6 +161,56 @@ $tabs-border: #bbb;
   }
 }
 
+/* Button Color mixins */
+
+@mixin button($background-color) {
+  color: #fff;
+  background-color: $background-color;
+  border: 0;
+  font-family: $headings-font;
+  font-weight: bold;
+  text-decoration: none;
+  @include border-radius(0);
+  &:hover {
+    background-color: lighten($background-color, 10%);
+  }
+  &:active {
+    background-color: darken($background-color, 10%);
+    color: #ddd;
+  }
+}
+
+/* Button Sizes mixin */
+@mixin size-regular {
+  font-size: 13px;
+  padding: 5px 10px;
+}
+
+@mixin size-login {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+@mixin size-medium {
+  font-size: 13px;
+  padding: 7px 12px;
+}
+
+@mixin size-big {
+  font-size: 15px;
+  padding: 7px 12px;
+}
+
+@mixin size-large-40 {
+  font-size: 16px;
+  padding: 10px 30px;
+}
+
+@mixin size-large-50 {
+  font-size: 16px;
+  padding: 15px 25px;
+}
+
 
 // =============================================================================
 // Default colors
