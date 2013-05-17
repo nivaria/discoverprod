@@ -112,11 +112,19 @@ tr.selected td {
 
 .header--region {
   .menu-links {
-    height: 0;
-    overflow: hidden;
-    @include transition(height 0.5s);
-    &.active {
-      height: auto;
+    display: none;
+    .close-menu-link {
+      background: transparent url(../images/header-sprite.png) no-repeat -168px -6px;
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 15px;
+      height: 15px;
     }
+  }
+  .language_wrapper .menu-links .close-menu-link {
+    left: 10px;
+    right: auto;
   }
 }

@@ -200,6 +200,9 @@
    ========================================================================== */
 
 .header--region {
+  #block-discover-generic-user-block {
+    position: relative;
+  }
   .user_picture_wrapper,
   .user-cart,
   .user-comments,
@@ -217,10 +220,6 @@
     width: 37px;
     height: 27px;
     margin-left: 8px;
-  }
-
-  #user-picture-menu-link {
-
   }
 
   .user-cart a {
@@ -250,18 +249,18 @@
     }
   }
 
-  #language-menu-link {
-
-  }
-
   .menu-hook {
-    z-index: 5
+    z-index: 2;
+    &.active_menu {
+      z-index: 4;
+      position: relative;
+    }
   }
 
   .menu-links {
     position: absolute;
     top: -10px;
-    left: -10px;
+    left: 0;
     z-index: 3;
 
     &.language_menu {
@@ -285,6 +284,7 @@
           font-weight: bold;
           padding: 6px 8px;
           text-decoration: none;
+          @include transition(color 0.3s ease-in-out);
 
           &:hover,
           &:active {
