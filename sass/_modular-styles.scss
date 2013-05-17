@@ -725,7 +725,7 @@ span.field-label { /* The inline field label used by the Fences module */
    ========================================================================== */
 
 .form-item { /* Wrapper for a form element (or group of form elements) and its label */
-  margin: 1.5em 0;
+  margin: 20px 0;
 
   .form-checkboxes & ,
   .form-radios & { /* Pack groups of checkboxes and radio buttons closer together */
@@ -915,7 +915,7 @@ div.custom-ajax-register-modal {
     h2, h3 {
       color: #999;
       font-size: 25px;
-      line-height: 35px;
+      line-height: 30px;
       margin: 0 25px;
       text-align: center;
     }
@@ -925,6 +925,9 @@ div.custom-ajax-register-modal {
       text-transform: uppercase;
       margin-top: 10px;
     }
+    .form-item {
+      margin: 10px 0;
+    }
     .ajax-register-links-wrapper {
       background-color: #E6E6E6;
       font-size: 16px;
@@ -933,14 +936,14 @@ div.custom-ajax-register-modal {
     #user-login {
       padding-bottom: 75px;
       > div {
-        padding: 40px 380px 40px 55px;
+        padding: 30px 380px 40px 55px;
       }
       .hybridauth-widget {
         position: absolute;
         left: 345px;
-        top: 120px;
+        top: 110px;
         margin:  0;
-        padding: 0 0 0 40px;
+        padding: 0 0 0 38px;
         border-left: 3px solid #E6E6E6;
       }
       .ajax-register-links-wrapper {
