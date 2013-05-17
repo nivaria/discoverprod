@@ -1865,10 +1865,38 @@ a.button {
   text-align: left;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003784}}
+input.form-autocomplete,
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  background: white;
+  border: 1px solid #DFDFDF;
+  color: #999;
+  padding: 5px 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003790}}
+select.form-select {
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003796}}
+input.form-text:focus,
+input.form-file:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  border: 1px solid #c5c5c5;
+  outline: none;
+  outline-style: none;
+  outline-width: 0;
+}
+
 /**
 * Keep form elements constrained in their containers.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003783}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003806}}
 input {
   max-width: 100%;
   -webkit-box-sizing: border-box;
@@ -1882,28 +1910,28 @@ input {
  * The default styling for the OpenID login link seems to assume Garland's
  * styling of list items.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003818}}
 .openid-links {
   /* OpenID creates a new ul above the login form's links. */
   margin-bottom: 0;
   /* Position OpenID's ul next to the rest of the links. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003800}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003823}}
 .openid-link,
 .user-link {
   /* The "Cancel OpenID login" link. */
   margin-top: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003805}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003828}}
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   margin-left: -20px;
   /* Un-do some of the padding on the ul list. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003809}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003832}}
 #user-login ul {
   margin: 1.5em 0;
 }
@@ -1911,22 +1939,22 @@ html.js #user-login-form li.openid-link,
 /*
  * Drupal admin tables
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003818}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003841}}
 form th {
   text-align: left;
   padding-right: 1em;
   border-bottom: 3px solid #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003847}}
 form tbody {
   border-top: 1px solid #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003828}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003851}}
 form table ul {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003834}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003857}}
 tr.even,
 tr.odd {
   background-color: #eee;
@@ -1934,12 +1962,12 @@ tr.odd {
   padding: 0.1em 0.6em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003840}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003863}}
 tr.even {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003848}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003871}}
 .lt-ie8 tr.even th,
 .lt-ie8 tr.even td,
 .lt-ie8 tr.odd th,
@@ -1948,13 +1976,13 @@ tr.even {
   /* IE doesn't display borders on table rows */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003854}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003877}}
 td.active {
   /* Markup generated by theme_tablesort_indicator(). */
   background-color: #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003859}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003882}}
 td.checkbox,
 th.checkbox {
   text-align: center;
@@ -1963,9 +1991,80 @@ th.checkbox {
 /*
  * Drupal core wrongly puts this in system.menus.css. Since we override that, add it back.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003867}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003890}}
 td.menu-disabled {
   background: #ccc;
+}
+
+/* =============================================================================
+   Custom Ajax Register ctools modal
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003898}}
+div.custom-ajax-register-modal {
+  background: white;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003903}}
+div.custom-ajax-register-modal .modal-header {
+  padding: 13px;
+  background-color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003906}}
+div.custom-ajax-register-modal .modal-header a.close {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003910}}
+div.custom-ajax-register-modal .modal-content {
+  color: #333333;
+  font-size: 16px;
+  padding: 0;
+  width: 100% !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003915}}
+div.custom-ajax-register-modal .modal-content h2, div.custom-ajax-register-modal .modal-content h3 {
+  color: #999;
+  font-size: 25px;
+  line-height: 35px;
+  margin: 0 25px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003922}}
+div.custom-ajax-register-modal .modal-content h2 {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003928}}
+div.custom-ajax-register-modal .modal-content .ajax-register-links-wrapper {
+  background-color: #E6E6E6;
+  font-size: 16px;
+  padding: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003933}}
+div.custom-ajax-register-modal .modal-content #user-login {
+  padding-bottom: 75px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003935}}
+div.custom-ajax-register-modal .modal-content #user-login > div {
+  padding: 40px 380px 40px 55px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003938}}
+div.custom-ajax-register-modal .modal-content #user-login .hybridauth-widget {
+  position: absolute;
+  left: 345px;
+  top: 120px;
+  margin: 0;
+  padding: 0 0 0 40px;
+  border-left: 3px solid #E6E6E6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003946}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /**

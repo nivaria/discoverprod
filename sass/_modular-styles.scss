@@ -777,6 +777,29 @@ a.button { /* Buttons used by contrib modules like Media */
   text-align: left;
 }
 
+input.form-autocomplete,
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  background: $white;
+  border: 1px solid #DFDFDF;
+  color: #999;
+  padding: 5px 10px;
+}
+select.form-select {
+  padding: 0;
+}
+input.form-text:focus,
+input.form-file:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  border: 1px solid #c5c5c5;
+  outline: none;
+  outline-style: none;
+  outline-width: 0;
+}
+
 /**
 * Keep form elements constrained in their containers.
 */
