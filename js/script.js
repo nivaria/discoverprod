@@ -14,9 +14,8 @@
 
   $(document).ready(function() {
 
-
+    // Trigger open/close menu on click
     $('#block-discover-generic-user-block .menu-hook').click(
-      // Trigger event on click
       function () {
         var submenu = $(this).next(".menu-links");
         if (submenu.is(":visible")) {
@@ -30,6 +29,7 @@
       }
     );
 
+    // Hide the submenu when clicking the 'x'
     $(".close-menu-link").live("click",
       function() {
         $(this).parent().prev(".menu-hook").removeClass("active_menu");
@@ -38,14 +38,6 @@
       }
     );
 
-/*
-    // Hide submenu on mouseleave
-    $('#block-discover-generic-user-block .menu-links').mouseleave(function() {
-      $(this).fadeOut().prev(".menu-hook").removeClass('active_menu');
-    });
-*/
-
   });
-
 
 })(jQuery, Drupal, this, this.document);
