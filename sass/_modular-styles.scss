@@ -867,3 +867,64 @@ th.checkbox {
 td.menu-disabled {
   background: #ccc;
 }
+
+/* =============================================================================
+   Custom Ajax Register ctools modal
+   ========================================================================== */
+
+div.custom-ajax-register-modal {
+  background: $white;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  .modal-header {
+    padding: 13px;
+    background-color: transparent;
+    a.close {
+      margin: 0;
+    }
+  }
+  .modal-content {
+    color: $headings-color;
+    font-size: 16px;
+    padding: 0;
+    width: 100% !important;
+    h2, h3 {
+      color: #999;
+      font-size: 25px;
+      line-height: 35px;
+      margin: 0 25px;
+      text-align: center;
+    }
+    h2 {
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+    .ajax-register-links-wrapper {
+      background-color: #E6E6E6;
+      font-size: 16px;
+      padding: 20px;
+    }
+    #user-login {
+      padding-bottom: 75px;
+      > div {
+        padding: 40px 380px 40px 55px;
+      }
+      .hybridauth-widget {
+        position: absolute;
+        left: 345px;
+        top: 120px;
+        margin:  0;
+        padding: 0 0 0 40px;
+        border-left: 3px solid #E6E6E6;
+      }
+      .ajax-register-links-wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
