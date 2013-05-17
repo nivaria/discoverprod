@@ -934,23 +934,76 @@ div.custom-ajax-register-modal {
       padding: 20px;
     }
     #user-login {
-      padding-bottom: 75px;
       > div {
         padding: 30px 380px 40px 55px;
       }
+      .item-list {
+        float: left;
+        position: relative;
+        left: 285px;
+        top: -140px;
+      }
       .hybridauth-widget {
-        position: absolute;
-        left: 345px;
-        top: 110px;
+        border-left: 3px solid #E6E6E6;
         margin:  0;
         padding: 0 0 0 38px;
-        border-left: 3px solid #E6E6E6;
+        width: 230px;
       }
       .ajax-register-links-wrapper {
         position: absolute;
         left: 0;
         bottom: 0;
+        .item-list {
+          float: none;
+          top: auto;
+          left: auto;
+        }
       }
     }
   }
 }
+
+/* =============================================================================
+   Hybrid Auth Widget
+   ========================================================================== */
+
+.item-list ul.hybridauth-widget {
+  li {
+    display: block;
+    margin-bottom: 15px;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+    .hybridauth-wrapper {
+      background-color: #777;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 30px;
+      padding: 5px 6px;
+      &:hover {
+        @include opacity(0.9);
+      }
+      &.provider-facebook {
+        background-color: #566fa4;
+      }
+      &.provider-twitter {
+        background-color: #63bce3;
+      }
+      &.provider-google {
+        background-color: #bb4050;
+      }
+      &.provider-foursquare {
+        background-color: #329DC8;
+      }
+    }
+    .hybridauth-icon {
+      margin-right: 15px;
+      @include opacity(1);
+    }
+  }
+}
+
+/* =============================================================================
+   Special Buttons
+   ========================================================================== */

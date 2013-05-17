@@ -5,6 +5,8 @@
  * When you turn on CSS aggregation at admin/config/development/performance, all
  * of these @include files will be combined into a single file.
  */
+/* Button Color mixins */
+/* Button Sizes mixin */
 /* Import Sass mixins, variables, Compass modules, etc. */
 /* Base rules */
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
@@ -2047,30 +2049,89 @@ div.custom-ajax-register-modal .modal-content .ajax-register-links-wrapper {
   font-size: 16px;
   padding: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003936}}
-div.custom-ajax-register-modal .modal-content #user-login {
-  padding-bottom: 75px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003938}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003937}}
 div.custom-ajax-register-modal .modal-content #user-login > div {
   padding: 30px 380px 40px 55px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003941}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003940}}
+div.custom-ajax-register-modal .modal-content #user-login .item-list {
+  float: left;
+  position: relative;
+  left: 285px;
+  top: -140px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003946}}
 div.custom-ajax-register-modal .modal-content #user-login .hybridauth-widget {
-  position: absolute;
-  left: 345px;
-  top: 110px;
+  border-left: 3px solid #E6E6E6;
   margin: 0;
   padding: 0 0 0 38px;
-  border-left: 3px solid #E6E6E6;
+  width: 230px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003949}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003952}}
 div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper {
   position: absolute;
   left: 0;
   bottom: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003956}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .item-list {
+  float: none;
+  top: auto;
+  left: auto;
+}
 
+/* =============================================================================
+   Hybrid Auth Widget
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003971}}
+.item-list ul.hybridauth-widget li {
+  display: block;
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003974}}
+.item-list ul.hybridauth-widget li a {
+  color: white;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003978}}
+.item-list ul.hybridauth-widget li .hybridauth-wrapper {
+  background-color: #777;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 5px 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003984}}
+.item-list ul.hybridauth-widget li .hybridauth-wrapper:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003987}}
+.item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-facebook {
+  background-color: #566fa4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003990}}
+.item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-twitter {
+  background-color: #63bce3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003993}}
+.item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-google {
+  background-color: #bb4050;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003996}}
+.item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-foursquare {
+  background-color: #329DC8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031000}}
+.item-list ul.hybridauth-widget li .hybridauth-icon {
+  margin-right: 15px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* =============================================================================
+   Special Buttons
+   ========================================================================== */
 /**
  * @file
  * Print styling
