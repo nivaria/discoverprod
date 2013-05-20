@@ -170,13 +170,16 @@ $tabs-border: #bbb;
   display: inline-block;
   font-family: $headings-font;
   font-weight: bold;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   @include border-radius(0);
+  @include box-sizing(content-box);
   &:hover {
-    background-color: lighten($background-color, 6%);
+    background-color: lighten($background-color, 5%);
   }
   &:active {
-    background-color: darken($background-color, 6%);
+    background-color: darken($background-color, 5%);
     color: #ddd;
   }
 }

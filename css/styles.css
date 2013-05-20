@@ -2030,6 +2030,10 @@ div.custom-ajax-register-modal .modal-content {
   width: 100% !important;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003919}}
+div.custom-ajax-register-modal .modal-content .messages, div.custom-ajax-register-modal .modal-content .messages-status, div.custom-ajax-register-modal .modal-content .messages-warning, div.custom-ajax-register-modal .modal-content .messages-error {
+  margin: 10px 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003922}}
 div.custom-ajax-register-modal .modal-content h2, div.custom-ajax-register-modal .modal-content h3 {
   color: #999;
   font-size: 25px;
@@ -2037,152 +2041,173 @@ div.custom-ajax-register-modal .modal-content h2, div.custom-ajax-register-modal
   margin: 0 25px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003926}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003929}}
 div.custom-ajax-register-modal .modal-content h2 {
   color: #000;
   text-align: center;
   text-transform: uppercase;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003932}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003935}}
 div.custom-ajax-register-modal .modal-content .form-item {
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003935}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003938}}
 div.custom-ajax-register-modal .modal-content .form-text {
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003938}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003941}}
 div.custom-ajax-register-modal .modal-content .ajax-register-links-wrapper {
   background-color: #E6E6E6;
   font-size: 16px;
   padding: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003944}}
-div.custom-ajax-register-modal .modal-content #user-login > div {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003948}}
+div.custom-ajax-register-modal .modal-content #user-login > div,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] > div {
   padding: 30px 380px 40px 55px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003947}}
-div.custom-ajax-register-modal .modal-content #user-login .item-list {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003951}}
+div.custom-ajax-register-modal .modal-content #user-login .item-list,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .item-list {
   float: left;
   position: relative;
   left: 285px;
   top: -140px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003953}}
-div.custom-ajax-register-modal .modal-content #user-login .hybridauth-widget {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003957}}
+div.custom-ajax-register-modal .modal-content #user-login .hybridauth-widget,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .hybridauth-widget {
   border-left: 3px solid #E6E6E6;
   margin: 0;
   padding: 0 0 0 38px;
   width: 230px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003959}}
-div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003963}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .ajax-register-links-wrapper {
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003964}}
-div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .ajax-register-links {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003968}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .ajax-register-links,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .ajax-register-links-wrapper .ajax-register-links {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003966}}
-div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .ajax-register-links li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003970}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .ajax-register-links li,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .ajax-register-links-wrapper .ajax-register-links li {
   padding: 0 0 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003968}}
-div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .ajax-register-links li.first a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003972}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .ajax-register-links li.first a,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .ajax-register-links-wrapper .ajax-register-links li.first a {
   margin-left: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003973}}
-div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .item-list {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003977}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .item-list,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .ajax-register-links-wrapper .item-list {
   float: none;
   top: auto;
   left: auto;
   right: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003978}}
-div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .item-list .last a.password {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003982}}
+div.custom-ajax-register-modal .modal-content #user-login .ajax-register-links-wrapper .item-list .last a.password,
+div.custom-ajax-register-modal .modal-content [id*="user-login"] .ajax-register-links-wrapper .item-list .last a.password {
   font-size: 11px;
   color: #999;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003986}}
-div.custom-ajax-register-modal .modal-content #user-register-form {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003991}}
+div.custom-ajax-register-modal .modal-content #user-register-form,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] {
   padding: 10px 80px 50px 80px;
   overflow: hidden;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003990}}
-div.custom-ajax-register-modal .modal-content #user-register-form #edit-account {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003995}}
+div.custom-ajax-register-modal .modal-content #user-register-form #edit-account,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] #edit-account {
   padding: 10px 0 30px 0;
   overflow: hidden;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003993}}
-div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .form-text {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003998}}
+div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .form-text,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] #edit-account .form-text {
   width: 47%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003996}}
-div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .username {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031001}}
+div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .username,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] #edit-account .username {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003999}}
-div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .password-field {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031004}}
+div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .password-field,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] #edit-account .password-field {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031002}}
-div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .password-confirm {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031007}}
+div.custom-ajax-register-modal .modal-content #user-register-form #edit-account .password-confirm,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] #edit-account .password-confirm {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031006}}
-div.custom-ajax-register-modal .modal-content #user-register-form #edit-field-legal {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031011}}
+div.custom-ajax-register-modal .modal-content #user-register-form #edit-field-legal,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] #edit-field-legal {
   display: block;
   float: left;
   font-size: 12px;
   width: 325px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031012}}
-div.custom-ajax-register-modal .modal-content #user-register-form .form-actions {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031017}}
+div.custom-ajax-register-modal .modal-content #user-register-form .form-actions,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] .form-actions {
   display: block;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031016}}
-div.custom-ajax-register-modal .modal-content #user-register-form .form-submit {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031021}}
+div.custom-ajax-register-modal .modal-content #user-register-form .form-submit,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] .form-submit {
   text-align: center;
   text-transform: uppercase;
-  width: 180px;
+  width: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031021}}
-div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-widget {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031026}}
+div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-widget,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] .hybridauth-widget {
   clear: both;
   padding-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031024}}
-div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-widget li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031029}}
+div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-widget li,
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] .hybridauth-widget li {
   width: 47%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031027}}
-div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-widget li:nth-child(even) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031032}}
+div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-widget li:nth-child(even),
+div.custom-ajax-register-modal .modal-content [id*="user-register-form"] .hybridauth-widget li:nth-child(even) {
   float: right;
 }
 
 /* =============================================================================
    Hybrid Auth Widget
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031042}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031047}}
 .item-list ul.hybridauth-widget li {
   display: block;
   margin-bottom: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031045}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031050}}
 .item-list ul.hybridauth-widget li a {
   color: white;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031049}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031054}}
 .item-list ul.hybridauth-widget li .hybridauth-wrapper {
   background-color: #777;
   font-size: 14px;
@@ -2190,28 +2215,28 @@ div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-wi
   line-height: 30px;
   padding: 5px 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031055}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031060}}
 .item-list ul.hybridauth-widget li .hybridauth-wrapper:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031058}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031063}}
 .item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-facebook {
   background-color: #566fa4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031061}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031066}}
 .item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-twitter {
   background-color: #63bce3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031064}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031069}}
 .item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-google {
   background-color: #bb4050;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031067}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031072}}
 .item-list ul.hybridauth-widget li .hybridauth-wrapper.provider-foursquare {
   background-color: #329DC8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031071}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031076}}
 .item-list ul.hybridauth-widget li .hybridauth-icon {
   margin-right: 15px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -2221,7 +2246,7 @@ div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-wi
 /* =============================================================================
    Special Buttons
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031082}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031087}}
 #block-discover-generic-user-block .ajax-register-links .first a {
   color: #fff;
   background-color: #99cc00;
@@ -2229,26 +2254,31 @@ div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-wi
   display: inline-block;
   font-family: "Quicksand", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 13px;
   padding: 5px 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003175}}
-#block-discover-generic-user-block .ajax-register-links .first a:hover {
-  background-color: #b0eb00;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003178}}
+#block-discover-generic-user-block .ajax-register-links .first a:hover {
+  background-color: #ace600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003181}}
 #block-discover-generic-user-block .ajax-register-links .first a:active {
-  background-color: #82ad00;
+  background-color: #86b300;
   color: #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031087}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031092}}
 #block-discover-generic-user-block .ajax-register-links .last a {
   color: #fff;
   background-color: #ff3366;
@@ -2256,26 +2286,31 @@ div.custom-ajax-register-modal .modal-content #user-register-form .hybridauth-wi
   display: inline-block;
   font-family: "Quicksand", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 13px;
   padding: 5px 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003175}}
-#block-discover-generic-user-block .ajax-register-links .last a:hover {
-  background-color: #ff527d;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003178}}
+#block-discover-generic-user-block .ajax-register-links .last a:hover {
+  background-color: #ff4d79;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003181}}
 #block-discover-generic-user-block .ajax-register-links .last a:active {
-  background-color: #ff144f;
+  background-color: #ff1a53;
   color: #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031092}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031097}}
 div.custom-ajax-register-modal #user-login .form-submit {
   color: #fff;
   background-color: #ff3366;
@@ -2283,27 +2318,32 @@ div.custom-ajax-register-modal #user-login .form-submit {
   display: inline-block;
   font-family: "Quicksand", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 13px;
   padding: 10px 20px;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003175}}
-div.custom-ajax-register-modal #user-login .form-submit:hover {
-  background-color: #ff527d;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003178}}
+div.custom-ajax-register-modal #user-login .form-submit:hover {
+  background-color: #ff4d79;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003181}}
 div.custom-ajax-register-modal #user-login .form-submit:active {
-  background-color: #ff144f;
+  background-color: #ff1a53;
   color: #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031097}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031102}}
 div.custom-ajax-register-modal #user-login .ajax-register-links .first a {
   color: #fff;
   background-color: #99cc00;
@@ -2311,27 +2351,32 @@ div.custom-ajax-register-modal #user-login .ajax-register-links .first a {
   display: inline-block;
   font-family: "Quicksand", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 13px;
   padding: 10px 20px;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003175}}
-div.custom-ajax-register-modal #user-login .ajax-register-links .first a:hover {
-  background-color: #b0eb00;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003178}}
+div.custom-ajax-register-modal #user-login .ajax-register-links .first a:hover {
+  background-color: #ace600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003181}}
 div.custom-ajax-register-modal #user-login .ajax-register-links .first a:active {
-  background-color: #82ad00;
+  background-color: #86b300;
   color: #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\000031107}}
 div.custom-ajax-register-modal #user-register-form .form-submit {
   color: #fff;
   background-color: #99cc00;
@@ -2339,22 +2384,27 @@ div.custom-ajax-register-modal #user-register-form .form-submit {
   display: inline-block;
   font-family: "Quicksand", "Helvetica Rounded", Arial, sans-serif;
   font-weight: bold;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   font-size: 16px;
   padding: 15px 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003175}}
-div.custom-ajax-register-modal #user-register-form .form-submit:hover {
-  background-color: #b0eb00;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003178}}
+div.custom-ajax-register-modal #user-register-form .form-submit:hover {
+  background-color: #ace600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_base\.scss}line{font-family:\00003181}}
 div.custom-ajax-register-modal #user-register-form .form-submit:active {
-  background-color: #82ad00;
+  background-color: #86b300;
   color: #ddd;
 }
 

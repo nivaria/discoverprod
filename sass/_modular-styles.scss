@@ -916,6 +916,9 @@ div.custom-ajax-register-modal {
     font-size: 16px;
     padding: 0;
     width: 100% !important;
+    .messages {
+      margin: 10px 25px;
+    }
     h2, h3 {
       color: #999;
       font-size: 25px;
@@ -940,7 +943,8 @@ div.custom-ajax-register-modal {
       font-size: 16px;
       padding: 20px;
     }
-    #user-login {
+    #user-login,
+    [id*="user-login"] {
       > div {
         padding: 30px 380px 40px 55px;
       }
@@ -983,7 +987,8 @@ div.custom-ajax-register-modal {
         }
       }
     }
-    #user-register-form {
+    #user-register-form,
+    [id*="user-register-form"] {
       padding: 10px 80px 50px 80px;
       @include clearfix;
 
@@ -1016,7 +1021,7 @@ div.custom-ajax-register-modal {
       .form-submit {
         text-align: center;
         text-transform: uppercase;
-        width: 180px;
+        width: 100px;
       }
       .hybridauth-widget {
         clear: both;
