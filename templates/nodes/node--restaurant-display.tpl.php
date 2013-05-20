@@ -93,13 +93,6 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 
-      <?php if ($display_submitted): ?>
-        <p class="submitted">
-          <?php print $user_picture; ?>
-          <?php print $submitted; ?>
-        </p>
-      <?php endif; ?>
-
       <?php if ($unpublished): ?>
         <p class="unpublished"><?php print t('Unpublished'); ?></p>
       <?php endif; ?>
@@ -137,7 +130,12 @@
     </div>
 
     <div class="column-additional-info">
-      <div class="column-author" style="background-color:#ccc;"><p>&nbsp;</p></div>
+      <div class="column-author">
+        <p class="submitted">
+          <?php print $user_picture; ?>
+          <?php print $submitted; ?>
+        </p>
+      </div>
       <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
       <div class="column-services"><?php print render($content['field_services']); ?></div>
       <div class="column-payment-methods" style="background-color:#ccc;"><p>&nbsp;</p></div>
