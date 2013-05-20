@@ -226,6 +226,11 @@
     margin-left: 8px;
   }
 
+  #user-picture-menu-link {
+    width: 40px;
+    background-position: 3px 0;
+  }
+
   .user-cart a {
      background-position: -88px 0;
   }
@@ -288,7 +293,7 @@
           font-weight: bold;
           padding: 6px 8px;
           text-decoration: none;
-          @include transition(color 0.3s ease-in-out);
+          @include transition(color 0.2s ease-in-out);
 
           &:hover,
           &:active {
@@ -674,6 +679,40 @@ span.field-label { /* The inline field label used by the Fences module */
 .update { /* The "new" or "updated" marker. */
   color: #c00;
   background-color: transparent; /* Remove background highlighting from <mark> in normalize. */
+}
+
+
+/* =============================================================================
+   Restaurant Display Nodes
+   ========================================================================== */
+
+.node-restaurant-display {
+
+}
+
+.flexslider-area {
+  .slides .field-banner-images img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .field-description {
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 25px 20px;
+    .lt-ie7 &,
+    .lt-ie8 & {
+      background:none;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+      zoom: 1;
+    }
+  }
 }
 
 /* =============================================================================

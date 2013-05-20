@@ -106,17 +106,61 @@
     </header>
   <?php endif; ?>
 
-  <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    print render($content);
-  ?>
+  <?php // dsm($content); ?>
 
-  <?php print render($restaurant_right); ?>
+  <?php print render($content['field_recommendation_discover']); ?>
+  <?php print render($content['extrafield_voting_general']); ?>
 
-  <?php print render($content['links']); ?>
+  <div class="flexslider-area">
+    <?php print render($content['field_image_collection']); ?>
+    <?php print render($content['extrafield_addthis']); ?>
+    <?php print flag_create_link('i_want_to_go', $node->nid); ?>
+    <?php print flag_create_link('i_have_been_there', $node->nid); ?>
+    <?php print flag_create_link('bookmarks', $node->nid); ?>
+  </div>
+  <div class="voting-and-map">
+    <?php print render($content['extrafield_community_tags']); ?>
+    <?php print render($content['field_short_address']); ?>
+  </div>
 
-  <?php print render($content['comments']); ?>
+
+  <div class="column-content">
+
+    <div class="column-price-offer">
+      <?php print render($content['field_average_price']); ?>
+      <?php print render($content['field_average_offer']); ?>
+    </div>
+    <div class="column-node-body">
+      <?php print render($content['body']); ?>
+      <?php print render($content['field_schedule']); ?>
+      <?php print render($content['field_timetable_text']); ?>
+    </div>
+
+    <div class="column-additional-info">
+      <div class="column-author" style="background-color:#ccc;"><p>&nbsp;</p></div>
+      <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
+      <div class="column-services"><?php print render($content['field_services']); ?></div>
+      <div class="column-payment-methods" style="background-color:#ccc;"><p>&nbsp;</p></div>
+      <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
+    </div>
+
+  </div>
+
+  <div class="column-restaurants-right" style="background-color:green;">
+      <?php print render($restaurant_right); ?>
+  </div>
+
+  <div class="node-bottom">
+    <?php
+      // We hide the comments and links now so that we can render them later.
+      hide($content['comments']);
+      hide($content['links']);
+      print render($content);
+    ?>
+
+    <?php print render($content['links']); ?>
+
+    <?php print render($content['comments']); ?>
+  </div>
 
 </article><!-- /.node -->

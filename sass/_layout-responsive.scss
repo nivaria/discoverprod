@@ -46,9 +46,7 @@ $zen-auto-include-item-base: false;
 .fixed-width-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 940px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 980px;
 }
 
 #header {
@@ -77,9 +75,25 @@ $zen-auto-include-item-base: false;
 .region-top-search,
 .region-sidebar-first,
 .region-sidebar-second,
-#footer {
+#footer,
+
+
+.flexslider-area,
+.voting-and-map,
+.column-content,
+.column-price-offer,
+.column-node-body,
+.column-author,
+.column-type-cuisine,
+.column-services,
+.column-payment-methods,
+.column-restaurants-right,
+.column-wrong-info,
+.node-bottom
+ {
   @include zen-grid-item-base();
 }
+
 
 /*
  * Containers for grid items and flow items.
@@ -180,15 +194,18 @@ $zen-column-count: 3;
 }
 
 /*
- * Use 5 grid columns for larger screens.
+ * Use 16 grid columns for larger screens.
  */
 $zen-column-count: 16;
 
 @media all and (min-width: 980px) {
 
+  /*
+   * Header Positioning
+   */
+
   .header--logo {
     .not-front & {
-/*       width: 25%; */
       @include zen-grid-item(4, 1);
       padding: 16px 0;
     }
@@ -232,7 +249,6 @@ $zen-column-count: 16;
       text-align: center;
     }
   }
-
 
   /*
    * The layout when there is only one sidebar, the left one.
@@ -279,4 +295,64 @@ $zen-column-count: 16;
       @include zen-grid-item(4, 13);
     }
   }
+
+  /*
+   * Node Type Restaurant Display
+   */
+
+/* =============================================================================
+   Restaurant Display Nodes
+   ========================================================================== */
+
+  .node-restaurant-display {
+    .flexslider-area {
+      @include zen-grid-item(12, 1);
+    }
+    .voting-and-map {
+      @include zen-grid-item(4, 13);
+    }
+    .column-content {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+      @include zen-nested-container();
+
+      // 12 Columns (16 - 4 for restaurant right)
+      $zen-column-count: 12;
+      .column-price-offer {
+        @include zen-grid-item(2, 1);
+      }
+      .column-node-body {
+        @include zen-grid-item(10, 3);
+      }
+    }
+    .column-additional-info {
+      @include zen-clear();
+      .column-author {
+        @include zen-grid-item(2, 1);
+      }
+      .column-type-cuisine {
+        @include zen-grid-item(3, 3);
+      }
+      .column-services {
+        @include zen-grid-item(4, 6);
+      }
+      .column-payment-methods {
+        @include zen-grid-item(3, 10);
+      }
+      .column-wrong-info {
+        @include zen-clear();
+        @include zen-grid-item(10, 3);
+      }
+    }
+
+    $zen-column-count: 16;
+    .column-restaurants-right {
+      @include zen-grid-item(4, 13)
+    }
+    .node-bottom {
+      @include zen-clear();
+    }
+
+  }
+
 }
