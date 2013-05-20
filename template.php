@@ -77,18 +77,28 @@ function discoverprod_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
+
 function discoverprod_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  // $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // discoverprod_preprocess_node_page() or discoverprod_preprocess_node_story().
+  // discoverdev_preprocess_node_page() or discoverdev_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
   }
 }
-// */
+
+// Insert variables in  restaurant_display node types
+function discoverprod_preprocess_node_restaurant_display(&$vars) {
+
+  // Add Restaurants Right region to Restaurant node types only
+  if ($blocks  = block_get_blocks_by_region('restaurant_right')) {
+    $vars['restaurant_right'] = $blocks;
+  }
+
+}
 
 /**
  * Override or insert variables into the comment templates.
