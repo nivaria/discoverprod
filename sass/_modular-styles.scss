@@ -687,7 +687,24 @@ span.field-label { /* The inline field label used by the Fences module */
    ========================================================================== */
 
 .node-restaurant-display {
-
+  .field-average-price,
+  .field-average-offer {
+    color: #000;
+    background: transparent url(../images/avg_price.png) no-repeat 0 0;
+    font-family: $headings-font;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    width: 60px;
+    height: 47px;
+    padding-top: 40px;
+    padding-right: 27px;
+    text-align: right;
+  }
+  .field-average-offer {
+    color: #fff;
+    background: url(../images/avg_offer.png) no-repeat 0 0;
+  }
 }
 
 .flexslider-area {
