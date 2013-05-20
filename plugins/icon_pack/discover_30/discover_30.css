@@ -1,0 +1,18 @@
+.hybridauth-icon {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+.hybridauth-facebook {
+  background: transparent url(icons/facebook.png) 0px 0px no-repeat;
+}
+.hybridauth-foursquare {
+  background: transparent url(icons/foursquare.png) 0px 0px no-repeat;
+}
+.hybridauth-google {
+  background: transparent url(icons/google.png) 0px 0px no-repeat;
+}
+.hybridauth-twitter {
+  background: transparent url(icons/twitter.png) 0px 0px no-repeat;
+}
