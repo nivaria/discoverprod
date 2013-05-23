@@ -113,38 +113,40 @@
   </div>
   <div class="voting-and-map">
     <?php print render($content['extrafield_community_tags']); ?>
-    <?php print render($content['field_short_address']); ?>
+    <?php print render($content['field_coordinates']); ?>
+    <?php print render($content['field_text_address']); ?>
   </div>
 
 
   <div class="column-content">
 
-    <div class="column-price-offer">
+    <div class="column-price-author">
       <?php print render($content['field_average_price']); ?>
       <?php print render($content['field_average_offer']); ?>
+      <p class="submitted">
+        <?php print $user_picture; ?>
+        <?php print $submitted; ?>
+      </p>
     </div>
     <div class="column-node-body">
       <?php print render($content['body']); ?>
-      <?php print render($content['field_schedule']); ?>
-      <?php print render($content['field_timetable_text']); ?>
-    </div>
 
-    <div class="column-additional-info">
-      <div class="column-author">
-        <p class="submitted">
-          <?php print $user_picture; ?>
-          <?php print $submitted; ?>
-        </p>
+      <div class="time-schedule">
+        <?php print render($content['field_schedule']); ?>
+        <?php print render($content['field_timetable_text']); ?>
       </div>
-      <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
-      <div class="column-services"><?php print render($content['field_services']); ?></div>
-      <div class="column-payment-methods" style="background-color:#ccc;"><p>&nbsp;</p></div>
-      <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
+
+      <div class="column-additional-info">
+        <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
+        <div class="column-services"><?php print render($content['field_services']); ?></div>
+        <div class="column-payment-methods"></div>
+        <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
+      </div>
     </div>
 
   </div>
 
-  <div class="column-restaurants-right" style="background-color:green;">
+  <div class="column-restaurants-right">
       <?php print render($restaurant_right); ?>
   </div>
 
