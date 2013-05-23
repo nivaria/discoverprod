@@ -159,7 +159,7 @@ body {
  */
 
 a {
-  @include transition(all 0.1s ease-in-out);
+  @include transition(color 0.1s ease-in-out);
 }
 
 a:link,
@@ -445,6 +445,7 @@ img {
   /* @todo Look into adding responsive embedded video. */
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
   @if $legacy-support-for-ie8 {
     width: auto; /* Correct IE 8 not scaling image height when resized. */
   }

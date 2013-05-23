@@ -787,6 +787,10 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .node {
+  margin-bottom: 80px;
+  &.node-teaser {
+    margin-bottom: 0;
+  }
   .time-schedule {
     padding: 40px 0;
     border-bottom: 4px solid #F5F5F5;
@@ -800,6 +804,57 @@ span.field-label { /* The inline field label used by the Fences module */
     }
     a:hover, a:active {
       color: $primary-color;
+    }
+  }
+}
+
+.flexslider-area {
+  position: relative;
+  .slides .field-banner-images img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .field-description {
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 25px 20px;
+    .lt-ie7 &,
+    .lt-ie8 & {
+      background:none;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+      zoom: 1;
+    }
+  }
+  .flag-links {
+    position: absolute;
+    bottom: 33px;
+    right: 22px;
+    .flag-wrapper {
+      display: inline-block;
+    }
+    .flag {
+      background-color: #666;
+      color: #fff;
+      display: block;
+      float: left;
+      font-family: $quicksand;
+      font-size: 11px;
+      font-weight: bold;
+      width: 54px;
+      height: 54px;
+      margin: 8px 3px;
+      text-align: center;
+      @include border-radius(100px);
+    }
+    .flag-throbber {
+      display: none;
     }
   }
 }
@@ -878,31 +933,6 @@ span.field-label { /* The inline field label used by the Fences module */
   }
 }
 
-.flexslider-area {
-  .slides .field-banner-images img {
-    display: inline-block;
-    vertical-align: bottom;
-  }
-  .field-description {
-    color: #fff;
-    background: #000;
-    background: rgba(0,0,0,0.6);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 25px 20px;
-    .lt-ie7 &,
-    .lt-ie8 & {
-      background:none;
-      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
-      zoom: 1;
-    }
-  }
-}
-
 /* =============================================================================
    Unpublished note
    ========================================================================== */
@@ -949,6 +979,22 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .indented { /* Nested comments are indented */
   margin-left: $indent-amount; /* Drupal core uses a 25px left margin */
+}
+
+
+/* =============================================================================
+   Views
+   ========================================================================== */
+
+.view-users-flags {
+  @include clearfix;
+  .views-row {
+    float: left;
+    margin: 4px 4px 0 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 /* =============================================================================
