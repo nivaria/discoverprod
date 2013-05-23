@@ -216,6 +216,20 @@ $tabs-border: #bbb;
   padding: 15px 40px;
 }
 
+/* Dotted Lists Style */
+@mixin dotted-ul {
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    text-indent: -10px;
+    li {
+      &::before {
+        content: "\0B7 \020";
+      }
+    }
+  }
+}
+
 
 // =============================================================================
 // Default colors
