@@ -42,7 +42,7 @@ function discoverprod_preprocess_html(&$variables, $hook) {
     'ctools-ajax-register-style' => array(
       'modalTheme' => 'custom_ajax_register_modal',
       'closeImage' => theme('image', array(
-        'path' => drupal_get_path('theme', 'discoverdev') . ('/images/modal_close.png'),
+        'path' => drupal_get_path('theme', 'discoverprod') . ('/images/modal_close.png'),
         'title' => t('Close window'),
         'alt' => t('Close window'),
       )),
@@ -54,6 +54,7 @@ function discoverprod_preprocess_html(&$variables, $hook) {
   // remove a class from $classes_array, use array_diff().
   //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
 }
+
 
 /**
  * Override or insert variables into the page templates.
@@ -83,7 +84,7 @@ function discoverprod_preprocess_node(&$variables, $hook) {
   // $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // discoverdev_preprocess_node_page() or discoverdev_preprocess_node_story().
+  // discoverprod_preprocess_node_page() or discoverprod_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -94,10 +95,12 @@ function discoverprod_preprocess_node(&$variables, $hook) {
 function discoverprod_preprocess_node_restaurant_display(&$vars) {
 
   // Add Restaurants Right region to Restaurant node types only
-  if ($blocks  = block_get_blocks_by_region('restaurant_right')) {
+  if ($blocks = block_get_blocks_by_region('restaurant_right')) {
     $vars['restaurant_right'] = $blocks;
   }
-
+  // Get the context blocks for the sidebar_second region .
+  $reaction = context_get_plugin('reaction', 'block');
+  $vars['restaurant_right'] = $reaction->block_get_blocks_by_region('restaurant_right');
 }
 
 /**

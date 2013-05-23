@@ -53,6 +53,7 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = fonts/quicksand.css
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/flexslider.css
+stylesheets[all][] = css/discover_poll.css
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
 ; Instead, Zen now adds conditional-comment-included classes to the html
