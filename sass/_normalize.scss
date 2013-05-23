@@ -238,6 +238,13 @@ h3 {
   @include trailer(1, $h3-font-size);
 }
 
+h3.field-label {
+  font-family: $arial;
+  font-size: 15px;
+  line-height: 1em;
+  margin: 0;
+}
+
 h4 {
   @include adjust-font-size-to( $h4-font-size );
   @include leader(1, $h4-font-size);
@@ -382,7 +389,7 @@ menu,
 ol,
 ul {
   margin: 0 0 rhythm(1) 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 20px;
 }
 
 ul, ol {
