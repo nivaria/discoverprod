@@ -81,9 +81,8 @@ $zen-auto-include-item-base: false;
 .flexslider-area,
 .voting-and-map,
 .column-content,
-.column-price-offer,
+.column-price-author,
 .column-node-body,
-.column-author,
 .column-type-cuisine,
 .column-services,
 .column-payment-methods,
@@ -315,34 +314,35 @@ $zen-column-count: 16;
       @include zen-clear();
       @include zen-grid-item(12, 1);
       @include zen-nested-container();
-
-      // 12 Columns (16 - 4 for restaurant right)
-      $zen-column-count: 12;
-      .column-price-offer {
-        @include zen-grid-item(2, 1);
-      }
-      .column-node-body {
-        @include zen-grid-item(10, 3);
-      }
     }
+
+    // 12 Columns (16 - 4 for restaurant right)
+    $zen-column-count: 12;
+    .column-price-author {
+      @include zen-grid-item(2, 1);
+    }
+    .column-node-body {
+      @include zen-grid-item(10, 3);
+    }
+
     .column-additional-info {
       @include zen-clear();
-      .column-author {
-        @include zen-grid-item(2, 1);
-      }
-      .column-type-cuisine {
-        @include zen-grid-item(3, 3);
-      }
-      .column-services {
-        @include zen-grid-item(4, 6);
-      }
-      .column-payment-methods {
-        @include zen-grid-item(3, 10);
-      }
-      .column-wrong-info {
-        @include zen-clear();
-        @include zen-grid-item(10, 3);
-      }
+      @include zen-nested-container();
+    }
+    // 10 Columns (12 - 2 for column-price-author)
+    $zen-column-count: 10;
+    .column-type-cuisine {
+      @include zen-grid-item(3, 1);
+    }
+    .column-services {
+      @include zen-grid-item(4, 4);
+    }
+    .column-payment-methods {
+      @include zen-grid-item(3, 8);
+    }
+    .column-wrong-info {
+      @include zen-clear();
+      @include zen-grid-item(10, 1);
     }
 
     $zen-column-count: 16;
