@@ -107,9 +107,11 @@
   <div class="flexslider-area">
     <?php print render($content['field_image_collection']); ?>
     <?php print render($content['extrafield_addthis']); ?>
-    <?php print flag_create_link('i_want_to_go', $node->nid); ?>
-    <?php print flag_create_link('i_have_been_there', $node->nid); ?>
-    <?php print flag_create_link('bookmarks', $node->nid); ?>
+    <div class="flag-links">
+      <?php print flag_create_link('i_want_to_go', $node->nid); ?>
+      <?php print flag_create_link('i_have_been_there', $node->nid); ?>
+      <?php print flag_create_link('bookmarks', $node->nid); ?>
+    </div>
   </div>
   <div class="voting-and-map">
     <?php print render($content['extrafield_community_tags']); ?>
@@ -129,6 +131,7 @@
       </p>
     </div>
     <div class="column-node-body">
+      <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>
       <?php print render($content['body']); ?>
 
       <div class="time-schedule">

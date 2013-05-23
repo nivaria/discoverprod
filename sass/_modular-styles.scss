@@ -787,6 +787,9 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .node {
+  h2.node-subtitle {
+    font-size: 25px;
+  }
   margin-bottom: 80px;
   &.node-teaser {
     margin-bottom: 0;
@@ -810,6 +813,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .flexslider-area {
   position: relative;
+  margin-bottom: 20px;
   .slides .field-banner-images img {
     display: inline-block;
     vertical-align: bottom;
