@@ -125,10 +125,11 @@
     <div class="column-price-author">
       <?php print render($content['field_average_price']); ?>
       <?php print render($content['field_average_offer']); ?>
-      <p class="submitted">
+      <div class="submitted">
+        <div class="submitted-label"><?php print t('Publication by'); ?></div>
         <?php print $user_picture; ?>
-        <?php print $submitted; ?>
-      </p>
+        <?php print $name; ?>
+      </div>
     </div>
     <div class="column-node-body">
       <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>

@@ -863,6 +863,24 @@ span.field-label { /* The inline field label used by the Fences module */
   }
 }
 
+.column-price-author .submitted {
+  margin-top: 20px;
+  text-align: center;
+  .submitted-label {
+    color: #999;
+    font-size: 10px;
+    text-align: center;
+  }
+  .user-picture {
+    display: inline-block;
+  }
+  .username {
+    color: $text-color;
+    display: block;
+    font-size: 10px;
+  }
+}
+
 
 /* =============================================================================
    Restaurant Display Nodes
@@ -911,7 +929,9 @@ span.field-label { /* The inline field label used by the Fences module */
     font-size: 15px;
   }
   .column-wrong-info {
+    color: #999;
     margin-bottom: 30px 0;
+    font-size: 13px;
     font-style: italic;
     a {
       color: $primary-color;
