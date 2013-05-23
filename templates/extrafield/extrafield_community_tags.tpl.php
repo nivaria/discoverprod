@@ -29,8 +29,9 @@
              <?php print $results[$key]['title']; ?>
           </div>
           <div class="axis-item-value">
-              <div class="meter red nostripes">
+              <div class="meter">
                   <span style="width:<?php print $results[$key]['value']; ?>%"></span>
+                  <span class="poll-icon"></span>
               </div>
           </div>
       </div>

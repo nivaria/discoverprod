@@ -334,7 +334,7 @@
 .comments--title,      /* Comment section heading */
 .comments--form-title, /* Comment form heading */
 .comment--title {      /* Comment title */
-  margin: 0;
+  margin-top: 0;
 }
 
 /* =============================================================================
@@ -672,7 +672,7 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /* =============================================================================
-   Nodes
+   Nodes Commons
    ========================================================================== */
 
 .new,
@@ -681,12 +681,34 @@ span.field-label { /* The inline field label used by the Fences module */
   background-color: transparent; /* Remove background highlighting from <mark> in normalize. */
 }
 
+.node {
+  .time-schedule {
+    padding: 40px 0;
+    border-bottom: 4px solid #F5F5F5;
+    border-top: 4px solid #F5F5F5;
+  }
+  .column-additional-info {
+    margin-top: 20px;
+  }
+}
+
 
 /* =============================================================================
    Restaurant Display Nodes
    ========================================================================== */
 
 .node-restaurant-display {
+  // Add icon to voting results
+  .axis-item-value .poll-icon {
+    background: transparent url(../images/poll-icon.png) no-repeat 0 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
   .field-average-price,
   .field-average-offer {
     color: #000;
@@ -704,6 +726,37 @@ span.field-label { /* The inline field label used by the Fences module */
   .field-average-offer {
     color: #fff;
     background: url(../images/avg_offer.png) no-repeat 0 0;
+  }
+  .field-schedule {
+    font-size: 16px;
+  }
+  .oh-current-closed {
+    color: #CC0000;
+  }
+  .oh-current-open {
+    color: darken($primary-color, 10%);
+  }
+  .field-timetable-text {
+    font-size: 15px;
+  }
+  .column-wrong-info {
+    margin: 30px 0;
+  }
+  .extrafield-community-tags {
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    padding: 10px;
+    h3 {
+      font-size: 14px;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+    }
+  }
+  .field-coordinates {
+    margin-bottom: 10px;
+  }
+  .field-text-address {
+    font-size: 13px;
   }
 }
 
@@ -1181,4 +1234,13 @@ div.custom-ajax-register-modal #user-login .ajax-register-links .first a {
 div.custom-ajax-register-modal #user-register-form .form-submit {
   @include button($primary-color);
   @include size-large-50;
+}
+
+
+/* =============================================================================
+   Dotted unordered lists
+   ========================================================================== */
+
+.column-additional-info {
+  @include dotted-ul;
 }
