@@ -158,17 +158,23 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 
-a:link {
+a {
+  @include transition(all 0.1s ease-in-out);
 }
 
+a:link,
 a:visited {
+  color: $primary-color;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
+  text-decoration: underline;
 }
 
 a:active {
+  color: darken(desaturate($primary-color, 10%), 10%)
 }
 
 /**

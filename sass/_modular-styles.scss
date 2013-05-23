@@ -794,6 +794,13 @@ span.field-label { /* The inline field label used by the Fences module */
   }
   .column-additional-info {
     margin-top: 20px;
+    a {
+      color: $text-color;
+      text-decoration: none;
+    }
+    a:hover, a:active {
+      color: $primary-color;
+    }
   }
 }
 
@@ -845,7 +852,13 @@ span.field-label { /* The inline field label used by the Fences module */
     font-size: 15px;
   }
   .column-wrong-info {
-    margin: 30px 0;
+    margin-bottom: 30px 0;
+    font-style: italic;
+    a {
+      color: $primary-color;
+      font-style: normal;
+      font-weight: bold;
+    }
   }
   .extrafield-community-tags {
     background-color: #f2f2f2;
