@@ -151,3 +151,26 @@ function discoverprod_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+
+/**
+ * Override Office Hours theme function.
+ *
+ * We need to display only the current state. Time schedule display is deleted.
+ */
+
+function discoverprod_office_hours_formatter_default($vars) {
+  $settings = $vars['settings'];
+  $open = $vars['open'];
+  $HTML = '';
+
+  // Generate HTML for CurrentStatus.
+  if ($open) {
+    $HTML = '<span class="oh-current-open">' . t($settings['current_status']['open_text']) . '</span>';
+  }
+  else {
+    $HTML = '<span class="oh-current-closed">' . t($settings['current_status']['closed_text']) . '</span>';
+  }
+
+  return $HTML;
+}
