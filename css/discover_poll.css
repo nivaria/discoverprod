@@ -1,0 +1,28 @@
+.meter {
+  height: 20px;  /* Can be anything */
+  overflow: hidden;
+  position: relative;
+  background: #E8E8E8;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: #666666;
+}
+
+.axis-results .axis-item {
+  margin-bottom: 8px;
+}
+
+.axis-results .axis-item-title {
+  display: inline-block;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.axis-results .axis-item-value {
+  display: inline-block;
+  float: right;
+  width: 60px;
+}
