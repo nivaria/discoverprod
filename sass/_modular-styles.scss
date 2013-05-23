@@ -604,6 +604,111 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /* =============================================================================
+   Quicktabs Styles
+   ========================================================================== */
+
+/* Quicktabs Black */
+
+#quicktabs-pie_de_restaurantes {
+  .quicktabs_main.quicktabs-style-nostyle {
+    margin: 0;
+    padding: 0;
+    clear: both;
+  }
+  ul.quicktabs-tabs.quicktabs-style-nostyle {
+    background-color: #333;
+    font-family: $quicksand;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    a {
+      color: #9e9e9e;
+      display: block;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 16px;
+      padding: 16px 40px;
+      text-align: center;
+    }
+    a:hover {
+      color: #9e9e9e;
+    }
+    li {
+      border-top: 6px solid #333;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+    li:hover {
+      background-color: #444;
+    }
+    li.active {
+      background-color: #fff;
+    }
+    li.active a {
+      color: #333;
+    }
+  }
+}
+
+/* Quicktabs Side Lite */
+
+#quicktabs-estuvieron_y_quieren_ir {
+  .quicktabs_main.quicktabs-style-nostyle {
+    border-top: 4px solid #666666;
+    margin: 0;
+    padding: 0;
+    clear: both;
+  }
+  ul.quicktabs-tabs.quicktabs-style-nostyle {
+    background-color: #f2f2f2;
+    font-family: $quicksand;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    a {
+      color: #9e9e9e;
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 16px;
+      padding: 20px 0;
+      text-align: center;
+    }
+    a:hover {
+      color: #9e9e9e;
+    }
+    li {
+      background-color: #f2f2f2;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 50%;
+    }
+    li:hover {
+      background-color: #e1e1e1;
+    }
+    li.active {
+      background-color: #666;
+    }
+    li.active a {
+      color: #fff;
+    }
+  }
+}
+
+
+/* =============================================================================
    Pager
    ========================================================================== */
 
