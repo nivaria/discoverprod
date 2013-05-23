@@ -60,7 +60,7 @@
 
   <div id="main">
 
-    <div id="content" class="column" role="main">
+    <section id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
@@ -74,9 +74,11 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      <?php print render($page['content']); ?>
+      <div class="content">
+        <?php print render($page['content']); ?>
+      </div>
       <?php print $feed_icons; ?>
-    </div>
+    </section>
 
     <?php
       // Render the sidebars to see if there's anything in them.
