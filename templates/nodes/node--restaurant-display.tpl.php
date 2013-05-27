@@ -114,15 +114,16 @@
       <?php print flag_create_link('bookmarks', $node->nid); ?>
     </div>
   </div>
-  <div class="voting-and-map">
-    <?php print render($content['extrafield_community_tags']); ?>
-    <?php print render($content['field_coordinates']); ?>
-    <?php print render($content['field_text_address']); ?>
-  </div>
 
+  <?php if ($content['extrafield_community_tags'] || $content['field_coordinates'] || $content['field_text_address']): ?>
+    <div class="voting-and-map">
+      <?php print render($content['extrafield_community_tags']); ?>
+      <?php print render($content['field_coordinates']); ?>
+      <?php print render($content['field_text_address']); ?>
+    </div>
+  <?php endif; ?>
 
   <div class="column-content">
-
     <div class="column-price-author">
       <?php print render($content['field_average_price']); ?>
       <?php print render($content['field_average_offer']); ?>
@@ -136,16 +137,25 @@
       <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>
       <?php print render($content['body']); ?>
 
-      <div class="time-schedule">
-        <?php print render($content['field_schedule']); ?>
-        <?php print render($content['field_timetable_text']); ?>
-      </div>
+      <?php if ($content['field_schedule'] || $content['field_timetable_text']): ?>
+        <div class="time-schedule">
+          <?php print render($content['field_schedule']); ?>
+          <?php print render($content['field_timetable_text']); ?>
+        </div>
+      <?php endif; ?>
 
       <div class="column-additional-info">
-        <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
-        <div class="column-services"><?php print render($content['field_services']); ?></div>
-        <div class="column-payment-methods"></div>
-        <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
+        <?php if ($content['field_cuisine_types']): ?>
+          <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
+        <?php endif; ?>
+
+        <?php if ($content['field_services']): ?>
+          <div class="column-services"><?php print render($content['field_services']); ?></div>
+        <?php endif; ?>
+
+        <?php if ($content['extrafield_wrong_info']): ?>
+          <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
+        <?php endif; ?>
       </div>
     </div>
 
