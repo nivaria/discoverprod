@@ -82,10 +82,10 @@ $zen-auto-include-item-base: false;
 .column-content,
 .column-price-author,
 .column-node-body,
-.column-type-cuisine,
-.column-services,
+.column-additional-first,
+.column-additional-middle,
 .column-payment-methods,
-.column-restaurants-right,
+.column-node-right,
 .column-wrong-info,
 .node-bottom,
 
@@ -153,7 +153,8 @@ $zen-auto-include-item-base: false;
     height: $nav-height;
     text-align: center;
   }
-  #quicktabs-pie_de_restaurantes {
+  #quicktabs-pie_de_restaurantes,
+  #block-quicktabs-plans-quick-tabs {
     ul.quicktabs-tabs.quicktabs-style-nostyle {
       margin: 0 -10px;
     }
@@ -280,10 +281,10 @@ $zen-column-count: 12;
     }
     // 10 Columns (12 - 2 for column-price-author)
     $zen-column-count: 10;
-    .column-type-cuisine {
+    .column-additional-first {
       @include zen-grid-item(3, 1);
     }
-    .column-services {
+    .column-additional-middle {
       @include zen-grid-item(4, 4);
     }
     .column-payment-methods {
@@ -297,7 +298,7 @@ $zen-column-count: 12;
     // Reset Back to 12 columns
     $zen-column-count: 12;
 
-    .column-restaurants-right {
+    .column-node-right {
       @include zen-clear();
       @include zen-grid-item(12, 1)
     }
@@ -362,14 +363,14 @@ $zen-column-count: 12;
       @include zen-grid-item(4, 1);
     }
     .column-highlighted {
-      @include zen-grid-item(8, 6);
+      @include zen-grid-item(8, 5);
     }
     .three-columns-layout {
       .column-highlighted {
-        @include zen-grid-item(6, 6);
+        @include zen-grid-item(6, 5);
       }
       .discover-poll-recommendation {
-        @include zen-grid-item(2, 13);
+        @include zen-grid-item(2, 11);
       }
     }
   }
@@ -481,10 +482,10 @@ $zen-column-count: 16;
 
 
   /*
-   * Node Type Restaurant Display
+   * Node Commons Layout
    */
 
-  .node-restaurant-display {
+   article.node {
     .flexslider-area {
       @include zen-grid-item(12, 1);
     }
@@ -510,12 +511,27 @@ $zen-column-count: 16;
       @include zen-clear();
       @include zen-nested-container();
     }
+
+    $zen-column-count: 16;
+    .column-node-right {
+      @include zen-grid-item(4, 13)
+    }
+    .node-bottom {
+      @include zen-clear();
+    }
+   }
+
+  /*
+   * Node Type Restaurant Display
+   */
+
+  .node-restaurant-display {
     // 10 Columns (12 - 2 for column-price-author)
     $zen-column-count: 10;
-    .column-type-cuisine {
+    .column-additional-first {
       @include zen-grid-item(3, 1);
     }
-    .column-services {
+    .column-additional-middle {
       @include zen-grid-item(4, 4);
     }
     .column-payment-methods {
@@ -525,15 +541,33 @@ $zen-column-count: 16;
       @include zen-clear();
       @include zen-grid-item(10, 1);
     }
+  }
 
-    $zen-column-count: 16;
-    .column-restaurants-right {
-      @include zen-grid-item(4, 13)
+  /*
+   * Node Type Plan Display
+   */
+
+  .node-plan-display {
+    // 10 Columns (12 - 2 for column-price-author)
+    $zen-column-count: 10;
+
+    .booking-calendar {
+      @include zen-grid-item(5, 1);
     }
-    .node-bottom {
-      @include zen-clear();
+    .time-schedule form {
+      @include zen-grid-item(4, 6);
+    }
+    .column-additional-first {
+      @include zen-grid-item(2, 1);
+    }
+    .column-additional-middle {
+      @include zen-grid-item(3, 3);
+    }
+    .column-additional-last {
+      @include zen-grid-item(4, 6);
     }
   }
+
 
   // Restaurant menu and promos Grid
   .view-men-s-restaurante {
