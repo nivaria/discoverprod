@@ -115,7 +115,7 @@
     </div>
   </div>
 
-  <?php if ($content['extrafield_community_tags'] || $content['field_coordinates'] || $content['field_text_address']): ?>
+  <?php if (isset($content['extrafield_community_tags']) || isset($content['field_coordinates']) || isset($content['field_text_address'])): ?>
     <div class="voting-and-map">
       <?php print render($content['extrafield_community_tags']); ?>
       <?php print render($content['field_coordinates']); ?>
@@ -137,7 +137,7 @@
       <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>
       <?php print render($content['body']); ?>
 
-      <?php if ($content['field_schedule'] || $content['field_timetable_text']): ?>
+      <?php if (isset($content['field_schedule']) || isset($content['field_timetable_text'])): ?>
         <div class="time-schedule">
           <?php print render($content['field_schedule']); ?>
           <?php print render($content['field_timetable_text']); ?>
@@ -145,15 +145,15 @@
       <?php endif; ?>
 
       <div class="column-additional-info">
-        <?php if ($content['field_cuisine_types']): ?>
-          <div class="column-type-cuisine"><?php print render($content['field_cuisine_types']); ?></div>
+        <?php if (isset($content['field_cuisine_types'])): ?>
+          <div class="column-additional-first"><?php print render($content['field_cuisine_types']); ?></div>
         <?php endif; ?>
 
-        <?php if ($content['field_services']): ?>
-          <div class="column-services"><?php print render($content['field_services']); ?></div>
+        <?php if (isset($content['field_services'])): ?>
+          <div class="column-additional-middle"><?php print render($content['field_services']); ?></div>
         <?php endif; ?>
 
-        <?php if ($content['extrafield_wrong_info']): ?>
+        <?php if (isset($content['extrafield_wrong_info'])): ?>
           <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
         <?php endif; ?>
       </div>
@@ -161,8 +161,8 @@
 
   </div>
 
-  <div class="column-restaurants-right">
-      <?php print render($restaurant_right); ?>
+  <div class="column-node-right">
+    <?php print render($node_right_region); ?>
   </div>
 
   <div class="node-bottom">
