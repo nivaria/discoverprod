@@ -42,21 +42,20 @@
       $counter++;
       } ?>
     </div>
-    <?php if(count($results)>3): ?>
-    <span class="more-tags">
-        <a href="#" class="show-more" title="<?php print t('Show 3 more'); ?>"><?php print t('Show 3 more'); ?></a>
-    </span>
+
     <span class="comment-link">
         <span class="comment-link-title">
           <?php print t('Did you go?'); ?>
         </span>
         <?php if ($node->comment == COMMENT_NODE_OPEN && user_access('post comments',$user)) {
-            print l(t('Give your opinion'),"comment/reply/$node->nid",array(
-                'attributes' => array('title' => t('Add a new comment.')),
+            print l(t('Opinion'),"comment/reply/$node->nid",array(
+                'attributes' => array(
+                  'class' => 'comment-vote',
+                  'title' => t('Add a new comment.')
+                ),
                 'fragment' => 'comment-form',
             ));
         } ?>
     </span>
-    <?php endif; ?>
 </div>
 <?php endif; ?>
