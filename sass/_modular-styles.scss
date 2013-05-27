@@ -607,13 +607,19 @@ span.field-label { /* The inline field label used by the Fences module */
    Quicktabs Styles
    ========================================================================== */
 
+.quicktabs_main {
+  @include clearfix;
+}
+
 /* Quicktabs Black */
 
 #quicktabs-pie_de_restaurantes {
   .quicktabs_main.quicktabs-style-nostyle {
-    margin: 0;
     padding: 0;
     clear: both;
+  }
+  .quicktabs-tabpage {
+    @include clearfix;
   }
   ul.quicktabs-tabs.quicktabs-style-nostyle {
     background-color: #333;
@@ -621,7 +627,7 @@ span.field-label { /* The inline field label used by the Fences module */
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0 -10px;
     padding: 0;
     a {
       color: #9e9e9e;
@@ -747,6 +753,137 @@ span.field-label { /* The inline field label used by the Fences module */
   margin-bottom: 1.5em;
 }
 
+#block-social-wall-social-wall,
+#block-discover-poll-discover-poll-opinions {
+  border-bottom: 4px solid #F5F5F5;
+}
+
+#block-social-wall-social-wall,
+#comments {
+  .user-and-picture {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: center;
+    padding: 0 3px;
+    img {
+      border: 4px solid #ccc;
+      margin-bottom: 5px;
+    }
+  }
+  .message-header {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 10px;
+    .flag-links {
+      float: right;
+      font-weight: bold;
+      a {
+        color: $secondary-color;
+      }
+    }
+  }
+  .message-body {
+    margin-bottom: 10px;
+  }
+}
+
+#block-social-wall-social-wall {
+  #social-wall-main-container {
+    margin-top: 30px;
+  }
+  #social-wall-message-items {
+    list-style: none;
+    padding: 0;
+    li:last-child {
+      text-align: center;
+      margin: 30px auto;
+      text-transform: uppercase;
+    }
+  }
+  .social-wall-message-item {
+    @include clearfix;
+    border-bottom: 4px solid #F5F5F5;
+    padding: 30px 0;
+  }
+}
+
+#comments {
+  margin-top: 40px;
+  .comments--title {
+    @include element-invisible;
+  }
+  article.comment {
+    @include clearfix;
+    border-bottom: 4px solid #F5F5F5;
+    padding: 30px 0;
+    &.first {
+      border-top: 4px solid #F5F5F5;
+    }
+  }
+  ul.links {
+    font-weight: bold;
+    float: right;
+    margin: 0;
+  }
+}
+
+#block-discover-poll-discover-poll-opinions {
+  margin-top: 30px;
+  .two-columns-layout,
+  .three-columns-layout {
+    background: #f6f7f8;
+    padding: 20px 0;
+    @include clearfix;
+  }
+  .column-results {
+    padding: 0 30px;
+  }
+  .column-highlighted {
+    border-left: 7px solid #fff;
+    min-height: 200px;
+    padding: 0 20px;
+  }
+  .three-columns-layout .column-highlighted {
+    border-right: 7px solid #fff;
+    min-height: 190px;
+  }
+  .links-container-bottom {
+    clear: both;
+    margin: 20px 0 40px 0;
+    text-align: center;
+  }
+}
+
+.discover-poll-highlighted {
+  h3 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+  .content {
+    background-color: #fff;
+    color: #999;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    position: relative;
+    &:after {
+      position: absolute;
+      bottom: -23px;
+      content: " ";
+      background: transparent url(../images/speech-arrow.png) no-repeat 20px 0;
+      display: block;
+      width: 100%;
+      height: 23px;
+    }
+  }
+  .content-footer {
+    font-size: 13px;
+    text-align: right;
+  }
+}
+
 /* =============================================================================
    Menus
    ========================================================================== */
@@ -836,6 +973,20 @@ span.field-label { /* The inline field label used by the Fences module */
       zoom: 1;
     }
   }
+  .badges {
+   position: absolute;
+   top: 15px;
+   left: 20px;
+   .field-recommendation-discover,
+   .extrafield-voting-general {
+     float: left;
+   }
+   .field-recommendation-discover {
+     width: 50px;
+     height: 50px;
+     margin-right: 10px;
+   }
+  }
   .flag-links {
     position: absolute;
     bottom: 33px;
@@ -887,17 +1038,6 @@ span.field-label { /* The inline field label used by the Fences module */
    ========================================================================== */
 
 .node-restaurant-display {
-  // Add icon to voting results
-  .axis-item-value .poll-icon {
-    background: transparent url(../images/poll-icon.png) no-repeat 0 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-  }
   .field-average-price,
   .field-average-offer {
     color: #000;
@@ -943,11 +1083,20 @@ span.field-label { /* The inline field label used by the Fences module */
     background-color: #f2f2f2;
     margin-bottom: 20px;
     padding: 10px;
+    @include clearfix;
     h3 {
       font-size: 14px;
       margin: 0 0 10px 0;
       text-transform: uppercase;
     }
+    .comment-link {
+      float: right;
+      padding-top: 10px;
+    }
+    .comment-vote {
+      text-transform: uppercase;
+    }
+
   }
   .field-coordinates {
     margin-bottom: 10px;
@@ -978,6 +1127,71 @@ span.field-label { /* The inline field label used by the Fences module */
   .lt-ie8 .node-unpublished>*,
   .lt-ie8 .comment-unpublished>* {
     position: relative; /* Otherwise these elements will appear below the "Unpublished" text. */
+  }
+}
+
+
+
+/* =============================================================================
+   Discover Poll
+   ========================================================================== */
+
+.discover-poll-results {
+  .general-results {
+    position: relative;
+    padding-right: 50px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .points-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .general-count {
+    font-size: 12px;
+  }
+  .axis-results {
+    .axis-item-title {
+      font-style: normal;
+      font-weight: bold;
+    }
+    .axis-item-value .meter > span {
+      background-color: $secondary-color;
+    }
+  }
+}
+// Add icon to voting results
+.axis-item-value .poll-icon {
+  background: transparent url(../images/poll-icon.png) no-repeat 0 0 !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.points-container {
+  background-color: $secondary-color;
+  color: #fff;
+  font-family: $quicksand;
+  font-size: 8px;
+  line-height: 12px;
+  text-transform: uppercase;
+  width: 48px;
+  height: 35px;
+  padding: 15px 0 0 2px;
+  text-align: center;
+  @include drop-style;
+  .points {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -1020,6 +1234,51 @@ span.field-label { /* The inline field label used by the Fences module */
     }
   }
 }
+
+
+.view-men-s-restaurante {
+  .views-row {
+    border-bottom: 4px solid #F5F5F5;
+    margin-top: 20px;
+  }
+  .side-price-offer {
+    text-align: right;
+  }
+  .field-price,
+  .field-offer {
+    color: #000;
+    background: transparent url(../images/avg_price_62px.png) no-repeat right center;
+    display: inline-block;
+    float: left;
+    font-family: $headings-font;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    padding-top: 26px;
+    padding-right: 11px;
+    width: 62px;
+    height: 62px;
+    text-align: right;
+    @include box-sizing(border-box);
+  }
+  .field-price.right {
+    float: right;
+    margin-right: 30px;
+  }
+  .field-offer {
+    color: #fff;
+    background-image: url(../images/avg_offer_62px.png);
+    float: right;
+    margin-right: 30px;
+    padding-right: 17px;
+  }
+  .restaurant-title {
+    font-family: $arial;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
 
 /* =============================================================================
    Forms
@@ -1065,7 +1324,7 @@ label.option {
   font-weight: normal;
 }
 
-a.button { /* Buttons used by contrib modules like Media */
+  a.button { /* Buttons used by contrib modules like Media */
   @include appearance(button);
 }
 
@@ -1409,7 +1668,8 @@ div.custom-ajax-register-modal #user-pass .ajax-register-links .last a {
 }
 
 div.custom-ajax-register-modal #user-login .form-submit,
-div.custom-ajax-register-modal #user-pass .form-submit {
+div.custom-ajax-register-modal #user-pass .form-submit,
+#block-discover-poll-discover-poll-opinions .links-container-bottom .comment-add a {
   @include button($secondary-color);
   @include size-login;
 }
@@ -1419,11 +1679,20 @@ div.custom-ajax-register-modal #user-login .ajax-register-links .first a {
   @include size-login;
 }
 
+#block-social-wall-social-wall #social-wall-show-more {
+  @include button($primary-color);
+  @include size-large-40;
+}
+
 div.custom-ajax-register-modal #user-register-form .form-submit {
   @include button($primary-color);
   @include size-large-50;
 }
 
+.extrafield-community-tags .comment-vote {
+  @include button($secondary-color);
+  @include size-medium;
+}
 
 /* =============================================================================
    Dotted unordered lists

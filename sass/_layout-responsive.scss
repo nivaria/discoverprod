@@ -88,7 +88,14 @@ $zen-auto-include-item-base: false;
 .column-payment-methods,
 .column-restaurants-right,
 .column-wrong-info,
-.node-bottom
+.node-bottom,
+
+.column-results,
+.column-highlighted,
+.discover-poll-recommendation,
+
+#block-social-wall-social-wall
+
  {
   @include zen-grid-item-base();
 }
@@ -240,6 +247,84 @@ $zen-column-count: 16;
     }
   }
 
+  .content-header {
+    margin: 0 10px;
+  }
+
+  // Restaurant menu and promos Grid
+  .view-men-s-restaurante {
+    .views-row {
+      @include zen-clear;
+      @include zen-grid-item(13, 2);
+      @include zen-nested-container();
+    }
+
+    // 14 Columns (16 - 2 for restaurant right)
+    $zen-column-count: 14;
+    .side-price-offer {
+      @include zen-grid-item(3, 1);
+    }
+    .title-description {
+      @include zen-grid-item(7, 4);
+    }
+  }
+
+  // Social Wall Grid
+  // Reset Back to 16 columns
+  $zen-column-count: 16;
+  #block-social-wall-social-wall {
+    @include zen-grid-container();
+  }
+  #social-wall-main-container,
+  #comments {
+    @include zen-grid-item(12, 3);
+    .social-wall-message-item {
+      @include zen-clear();
+    }
+
+    // Reset Back to 12 columns
+    $zen-column-count: 12;
+    .user-and-picture {
+      @include zen-grid-item(2, 1);
+    }
+    .social-message {
+      @include zen-grid-item(10, 3);
+      float: none;
+    }
+    .addthis_toolbox {
+      @include zen-grid-item(10, 3);
+    }
+  }
+
+  // Reset Back to 16 columns
+  $zen-column-count: 16;
+
+  // Opinions tab
+  #block-discover-poll-discover-poll-opinions {
+    @include zen-grid-item(14, 2);
+    @include zen-nested-container();
+
+    // Reset Back to 14 columns
+    $zen-column-count: 14;
+    .column-results {
+      @include zen-grid-item(5, 1);
+    }
+    .column-highlighted {
+      @include zen-grid-item(9, 6);
+    }
+    .three-columns-layout {
+      .column-highlighted {
+        @include zen-grid-item(7, 6);
+      }
+      .discover-poll-recommendation {
+        @include zen-grid-item(2, 13);
+      }
+    }
+  }
+
+  // Reset Back to 16 columns
+  $zen-column-count: 16;
+
   #block-discover-generic-user-block {
     float: right;
     margin: 16px 0 0;
@@ -301,6 +386,7 @@ $zen-column-count: 16;
       @include zen-grid-item(4, 13);
     }
   }
+
 
   /*
    * Node Type Restaurant Display

@@ -17,6 +17,13 @@ description = Responsive Zen 5.1 subtheme.
 
 
 
+
+screenshot  = screenshot.png
+name        = Discover: Dev
+description = Responsive Zen 5.1 subtheme.
+
+
+
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
 
 core        = 7.x

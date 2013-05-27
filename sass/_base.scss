@@ -216,6 +216,10 @@ $tabs-border: #bbb;
   padding: 15px 40px;
 }
 
+@mixin drop-style {
+  @include border-radius(50% 50% 0 50%);
+}
+
 /* Dotted Lists Style */
 @mixin dotted-ul {
   ul {

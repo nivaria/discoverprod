@@ -13,16 +13,19 @@
 
 .axis-results .axis-item {
   margin-bottom: 8px;
+  position: relative;
 }
 
 .axis-results .axis-item-title {
   display: inline-block;
   font-size: 12px;
   font-style: italic;
+  padding-right: 65px;
 }
 
 .axis-results .axis-item-value {
-  display: inline-block;
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 60px;
 }
