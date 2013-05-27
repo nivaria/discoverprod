@@ -101,12 +101,13 @@
 
   <?php // dsm($content); ?>
 
-  <?php print render($content['field_recommendation_discover']); ?>
-  <?php print render($content['extrafield_voting_general']); ?>
-
   <div class="flexslider-area">
     <?php print render($content['field_image_collection']); ?>
     <?php print render($content['extrafield_addthis']); ?>
+    <div class="badges">
+      <?php print render($content['field_recommendation_discover']); ?>
+      <?php print render($content['extrafield_voting_general']); ?>
+    </div>
     <div class="flag-links">
       <?php print flag_create_link('i_want_to_go', $node->nid); ?>
       <?php print flag_create_link('i_have_been_there', $node->nid); ?>
