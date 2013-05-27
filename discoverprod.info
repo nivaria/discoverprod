@@ -12,14 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Discover: Production
-description = Responsive Zen 5.1 subtheme.
-
-
-
-
-screenshot  = screenshot.png
-name        = Discover: Dev
+name        = Discover: Prod
 description = Responsive Zen 5.1 subtheme.
 
 
