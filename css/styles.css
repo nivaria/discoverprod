@@ -752,9 +752,8 @@ table {
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\0000398}}
 #header,
-#content,
 #navigation,
 .region-top-search,
 .region-sidebar-first,
@@ -788,7 +787,7 @@ table {
 /*
  * Containers for grid items and flow items.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003107}}
 #main {
   background-color: #fff;
   max-width: 980px;
@@ -796,7 +795,7 @@ table {
   padding: 20px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003116}}
 #header,
 #main,
 #footer {
@@ -819,97 +818,137 @@ table {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003121}}
 #header,
 #footer {
   background-color: #333333;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003125}}
+.content-header {
+  margin: 0 10px;
+}
+
 /*
  * Navigation bar
  */
-@media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003131}}
+@media all and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003134}}
+  .column-price-author {
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003138}}
+  .field-average-price,
+  .field-average-offer {
+    float: left;
+    margin-right: 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003142}}
+  .submitted {
+    float: right;
+  }
+}
+@media all and (min-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003149}}
+  #content {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/discoverdev/boxsizing.htc");
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003152}}
   #navigation {
     height: 50px;
     text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003157}}
+  #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle {
+    margin: 0 -10px;
   }
 }
 /*
  * Use 3 grid columns for smaller screens.
  */
-@media all and (min-width: 480px) and (max-width: 979px) {
+@media all and (min-width: 481px) and (max-width: 979px) {
   /*
    * The layout when there is only one sidebar, the left one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003177}}
   .sidebar-first #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
+    width: 16.66667%;
+    margin-left: 8.33333%;
+    margin-right: -25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003181}}
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
-    width: 33.33333%;
+    width: 8.33333%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -8.33333%;
   }
 
   /*
    * The layout when there is only one sidebar, the right one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003191}}
   .sidebar-second #content {
     /* Span 2 columns, starting in 1st column from left. */
     float: left;
-    width: 66.66667%;
+    width: 16.66667%;
     margin-left: 0%;
-    margin-right: -66.66667%;
+    margin-right: -16.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003195}}
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 3rd column from left. */
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
-    margin-right: -100%;
+    width: 8.33333%;
+    margin-left: 16.66667%;
+    margin-right: -25%;
   }
 
   /*
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003205}}
   .two-sidebars #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
+    width: 16.66667%;
+    margin-left: 8.33333%;
+    margin-right: -25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003209}}
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
-    width: 33.33333%;
+    width: 8.33333%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -8.33333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003213}}
   .two-sidebars .region-sidebar-second {
     /* Start a new row and span all 3 columns. */
     float: left;
-    width: 100%;
+    width: 25%;
     margin-left: 0%;
-    margin-right: -100%;
+    margin-right: -25%;
     padding-left: 0;
     padding-right: 0;
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003218}}
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -920,107 +959,184 @@ table {
     word-wrap: break-word;
     *behavior: url("/sites/all/themes/discoverdev/boxsizing.htc");
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003221}}
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     /* Span 1 column, starting in the 1st column from left. */
     float: left;
-    width: 33.33333%;
+    width: 8.33333%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -8.33333%;
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003225}}
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     /* Span 1 column, starting in the 2nd column from left. */
     float: left;
-    width: 33.33333%;
-    margin-left: 33.33333%;
-    margin-right: -66.66667%;
+    width: 8.33333%;
+    margin-left: 8.33333%;
+    margin-right: -16.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003228}}
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     /* Span 1 column, starting in the 3rd column from left. */
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
+    width: 8.33333%;
+    margin-left: 16.66667%;
+    margin-right: -25%;
+  }
+
+  /*
+   * Node Type Restaurant Display
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003239}}
+  .node-restaurant-display .flexslider-area {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
     margin-right: -100%;
   }
-}
-/*
- * Use 16 grid columns for larger screens.
- */
-@media all and (min-width: 980px) {
-  /*
-   * Header Positioning
-   */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003221}}
-  .not-front .header--logo {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003241}}
+  .node-restaurant-display .flexslider-area span.imageeditor-inline-wrapper {
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003244}}
+  .node-restaurant-display .flexslider-area .field-banner-images img {
+    width: 100%;
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003251}}
+  .node-restaurant-display .extrafield-community-tags,
+  .node-restaurant-display .field-coordinates,
+  .node-restaurant-display .field-text-address {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/discoverdev/boxsizing.htc");
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003254}}
+  .node-restaurant-display .extrafield-community-tags {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003258}}
+  .node-restaurant-display .field-coordinates {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003261}}
+  .node-restaurant-display .field-text-address {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003264}}
+  .node-restaurant-display .column-content {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003270}}
+  .node-restaurant-display .column-price-author {
+    float: left;
+    width: 16.66667%;
+    margin-left: 0%;
+    margin-right: -16.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003273}}
+  .node-restaurant-display .column-node-body {
+    float: left;
+    width: 83.33333%;
+    margin-left: 16.66667%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003277}}
+  .node-restaurant-display .column-additional-info {
+    clear: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003283}}
+  .node-restaurant-display .column-type-cuisine {
+    float: left;
+    width: 30%;
+    margin-left: 0%;
+    margin-right: -30%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003286}}
+  .node-restaurant-display .column-services {
+    float: left;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: -70%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003289}}
+  .node-restaurant-display .column-payment-methods {
+    float: left;
+    width: 30%;
+    margin-left: 70%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003292}}
+  .node-restaurant-display .column-wrong-info {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003300}}
+  .node-restaurant-display .column-restaurants-right {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003304}}
+  .node-restaurant-display .node-bottom {
+    clear: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003314}}
+  .view-men-s-restaurante .views-row {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003320}}
+  .view-men-s-restaurante .side-price-offer {
     float: left;
     width: 25%;
     margin-left: 0%;
     margin-right: -25%;
-    padding: 16px 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003225}}
-  .front .header--logo {
-    text-align: center;
-    padding: 16px 0 6px 0;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003231}}
-  .header--region {
-    position: absolute;
-    right: 0;
-    width: 35%;
-    top: 0;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003239}}
-  .not-front .region-top-search {
-    float: left;
-    width: 25%;
-    margin-left: 25%;
-    margin-right: -50%;
-    margin-top: 16px;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003243}}
-  .front .region-top-search {
-    position: absolute;
-    left: 20px;
-    top: 16px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003250}}
-  .content-header {
-    margin: 0 10px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003256}}
-  .view-men-s-restaurante .views-row {
-    clear: left;
-    float: left;
-    width: 81.25%;
-    margin-left: 6.25%;
-    margin-right: -87.5%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003264}}
-  .view-men-s-restaurante .side-price-offer {
-    float: left;
-    width: 21.42857%;
-    margin-left: 0%;
-    margin-right: -21.42857%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003323}}
   .view-men-s-restaurante .title-description {
     float: left;
-    width: 50%;
-    margin-left: 21.42857%;
-    margin-right: -71.42857%;
+    width: 66.66667%;
+    margin-left: 25%;
+    margin-right: -91.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003331}}
   #block-social-wall-social-wall {
     *position: relative;
     *zoom: 1;
@@ -1035,20 +1151,20 @@ table {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003335}}
   #social-wall-main-container,
   #comments {
     float: left;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: -87.5%;
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    margin-right: -91.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003337}}
   #social-wall-main-container .social-wall-message-item,
   #comments .social-wall-message-item {
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003341}}
   #social-wall-main-container .user-and-picture,
   #comments .user-and-picture {
     float: left;
@@ -1056,7 +1172,7 @@ table {
     margin-left: 0%;
     margin-right: -16.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003344}}
   #social-wall-main-container .social-message,
   #comments .social-message {
     float: left;
@@ -1065,7 +1181,7 @@ table {
     margin-right: -100%;
     float: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003348}}
   #social-wall-main-container .addthis_toolbox,
   #comments .addthis_toolbox {
     float: left;
@@ -1074,51 +1190,95 @@ table {
     margin-right: -100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003303}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003357}}
   #block-discover-poll-discover-poll-opinions {
     float: left;
-    width: 87.5%;
-    margin-left: 6.25%;
-    margin-right: -93.75%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
     padding-left: 0;
     padding-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003361}}
   #block-discover-poll-discover-poll-opinions .column-results {
     float: left;
-    width: 35.71429%;
+    width: 33.33333%;
     margin-left: 0%;
-    margin-right: -35.71429%;
+    margin-right: -33.33333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003364}}
   #block-discover-poll-discover-poll-opinions .column-highlighted {
     float: left;
-    width: 64.28571%;
-    margin-left: 35.71429%;
-    margin-right: -100%;
+    width: 66.66667%;
+    margin-left: 41.66667%;
+    margin-right: -108.33333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003368}}
   #block-discover-poll-discover-poll-opinions .three-columns-layout .column-highlighted {
     float: left;
     width: 50%;
-    margin-left: 35.71429%;
-    margin-right: -85.71429%;
+    margin-left: 41.66667%;
+    margin-right: -91.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003371}}
   #block-discover-poll-discover-poll-opinions .three-columns-layout .discover-poll-recommendation {
     float: left;
-    width: 14.28571%;
-    margin-left: 85.71429%;
-    margin-right: -100%;
+    width: 16.66667%;
+    margin-left: 100%;
+    margin-right: -116.66667%;
+  }
+}
+/*
+ * Use 16 grid columns for larger screens.
+ */
+@media all and (min-width: 980px) {
+  /*
+   * Header Positioning
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003391}}
+  .not-front .header--logo {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding: 16px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003395}}
+  .front .header--logo {
+    text-align: center;
+    padding: 16px 0 6px 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003401}}
+  .header--region {
+    position: absolute;
+    right: 0;
+    width: 35%;
+    top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003409}}
+  .not-front .region-top-search {
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
+    margin-top: 16px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003413}}
+  .front .region-top-search {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003420}}
   #block-discover-generic-user-block {
     float: right;
     margin: 16px 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003426}}
   .not-front #navigation {
     float: left;
     width: 50%;
@@ -1127,7 +1287,7 @@ table {
     text-align: left;
     margin-top: 50px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003431}}
   .front #navigation {
     text-align: center;
   }
@@ -1135,7 +1295,7 @@ table {
   /*
    * The layout when there is only one sidebar, the left one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003441}}
   .sidebar-first #content {
     /* Span 4 columns, starting in 2nd column from left. */
     float: left;
@@ -1143,7 +1303,7 @@ table {
     margin-left: 25%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003445}}
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -1155,7 +1315,7 @@ table {
   /*
    * The layout when there is only one sidebar, the right one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003455}}
   .sidebar-second #content {
     /* Span 4 columns, starting in 1st column from left. */
     float: left;
@@ -1163,7 +1323,7 @@ table {
     margin-left: 0%;
     margin-right: -75%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003459}}
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -1175,7 +1335,7 @@ table {
   /*
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003469}}
   .two-sidebars #content {
     /* Span 3 columns, starting in 2nd column from left. */
     float: left;
@@ -1183,7 +1343,7 @@ table {
     margin-left: 25%;
     margin-right: -75%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003473}}
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -1191,7 +1351,7 @@ table {
     margin-left: 0%;
     margin-right: -25%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003477}}
   .two-sidebars .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -1203,24 +1363,21 @@ table {
   /*
    * Node Type Restaurant Display
    */
-  /* =============================================================================
-     Restaurant Display Nodes
-     ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003400}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003488}}
   .node-restaurant-display .flexslider-area {
     float: left;
     width: 75%;
     margin-left: 0%;
     margin-right: -75%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003491}}
   .node-restaurant-display .voting-and-map {
     float: left;
     width: 25%;
     margin-left: 75%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003494}}
   .node-restaurant-display .column-content {
     clear: left;
     float: left;
@@ -1230,48 +1387,48 @@ table {
     padding-left: 0;
     padding-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003414}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003502}}
   .node-restaurant-display .column-price-author {
     float: left;
     width: 16.66667%;
     margin-left: 0%;
     margin-right: -16.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003505}}
   .node-restaurant-display .column-node-body {
     float: left;
     width: 83.33333%;
     margin-left: 16.66667%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003421}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003509}}
   .node-restaurant-display .column-additional-info {
     clear: left;
     padding-left: 0;
     padding-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003515}}
   .node-restaurant-display .column-type-cuisine {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003430}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003518}}
   .node-restaurant-display .column-services {
     float: left;
     width: 40%;
     margin-left: 30%;
     margin-right: -70%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003433}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003521}}
   .node-restaurant-display .column-payment-methods {
     float: left;
     width: 30%;
     margin-left: 70%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003524}}
   .node-restaurant-display .column-wrong-info {
     clear: left;
     float: left;
@@ -1279,16 +1436,133 @@ table {
     margin-left: 0%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003530}}
   .node-restaurant-display .column-restaurants-right {
     float: left;
     width: 25%;
     margin-left: 75%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003533}}
   .node-restaurant-display .node-bottom {
     clear: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003540}}
+  .view-men-s-restaurante .views-row {
+    clear: left;
+    float: left;
+    width: 81.25%;
+    margin-left: 6.25%;
+    margin-right: -87.5%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003548}}
+  .view-men-s-restaurante .side-price-offer {
+    float: left;
+    width: 21.42857%;
+    margin-left: 0%;
+    margin-right: -21.42857%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003551}}
+  .view-men-s-restaurante .title-description {
+    float: left;
+    width: 50%;
+    margin-left: 21.42857%;
+    margin-right: -71.42857%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003559}}
+  #block-social-wall-social-wall {
+    *position: relative;
+    *zoom: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
+  #block-social-wall-social-wall:before, #block-social-wall-social-wall:after {
+    content: "";
+    display: table;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000356}}
+  #block-social-wall-social-wall:after {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003563}}
+  #social-wall-main-container,
+  #comments {
+    float: left;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: -87.5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003565}}
+  #social-wall-main-container .social-wall-message-item,
+  #comments .social-wall-message-item {
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003571}}
+  #social-wall-main-container .user-and-picture,
+  #comments .user-and-picture {
+    float: left;
+    width: 16.66667%;
+    margin-left: 0%;
+    margin-right: -16.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003574}}
+  #social-wall-main-container .social-message,
+  #comments .social-message {
+    float: left;
+    width: 83.33333%;
+    margin-left: 16.66667%;
+    margin-right: -100%;
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003578}}
+  #social-wall-main-container .addthis_toolbox,
+  #comments .addthis_toolbox {
+    float: left;
+    width: 83.33333%;
+    margin-left: 16.66667%;
+    margin-right: -100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003587}}
+  #block-discover-poll-discover-poll-opinions {
+    float: left;
+    width: 87.5%;
+    margin-left: 6.25%;
+    margin-right: -93.75%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003593}}
+  #block-discover-poll-discover-poll-opinions .column-results {
+    float: left;
+    width: 35.71429%;
+    margin-left: 0%;
+    margin-right: -35.71429%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003596}}
+  #block-discover-poll-discover-poll-opinions .column-highlighted {
+    float: left;
+    width: 64.28571%;
+    margin-left: 35.71429%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003600}}
+  #block-discover-poll-discover-poll-opinions .three-columns-layout .column-highlighted {
+    float: left;
+    width: 50%;
+    margin-left: 35.71429%;
+    margin-right: -85.71429%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_layout-responsive\.scss}line{font-family:\00003603}}
+  #block-discover-poll-discover-poll-opinions .three-columns-layout .discover-poll-recommendation {
+    float: left;
+    width: 14.28571%;
+    margin-left: 85.71429%;
+    margin-right: -100%;
   }
 }
 /* Module rules */
@@ -1952,10 +2226,9 @@ span.field-label {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 0 -10px;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003632}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003631}}
 #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle a {
   color: #9e9e9e;
   display: block;
@@ -1967,11 +2240,11 @@ span.field-label {
   padding: 16px 40px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003643}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003642}}
 #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle a:hover {
   color: #9e9e9e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003646}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003645}}
 #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle li {
   border-top: 6px solid #333;
   display: inline-block;
@@ -1979,28 +2252,28 @@ span.field-label {
   padding: 0;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003653}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003652}}
 #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle li:hover {
   background-color: #444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003656}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003655}}
 #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle li.active {
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003659}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003658}}
 #quicktabs-pie_de_restaurantes ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
   color: #333;
 }
 
 /* Quicktabs Side Lite */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003668}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003667}}
 #quicktabs-estuvieron_y_quieren_ir .quicktabs_main.quicktabs-style-nostyle {
   border-top: 4px solid #666666;
   margin: 0;
   padding: 0;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003674}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003673}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle {
   background-color: #f2f2f2;
   font-family: "Quicksand", "Helvetica Rounded", Arial, sans-serif;
@@ -2009,7 +2282,7 @@ span.field-label {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003681}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003680}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle a {
   color: #9e9e9e;
   display: block;
@@ -2021,11 +2294,11 @@ span.field-label {
   padding: 20px 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003692}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003691}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle a:hover {
   color: #9e9e9e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003695}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003694}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle li {
   background-color: #f2f2f2;
   display: block;
@@ -2035,15 +2308,15 @@ span.field-label {
   position: relative;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003704}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003703}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle li:hover {
   background-color: #e1e1e1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003707}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003706}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle li.active {
   background-color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003710}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003709}}
 #quicktabs-estuvieron_y_quieren_ir ul.quicktabs-tabs.quicktabs-style-nostyle li.active a {
   color: #fff;
 }
@@ -2051,7 +2324,7 @@ span.field-label {
 /* =============================================================================
    Pager
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003721}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003720}}
 .pager {
   /* A list of page numbers when more than 1 page of content is available. */
   clear: both;
@@ -2059,7 +2332,7 @@ span.field-label {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003727}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003726}}
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -2072,7 +2345,7 @@ span.field-label {
   background-image: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003739}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003738}}
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -2082,7 +2355,7 @@ span.field-label {
   /* A concatenation of several list items using an ellipsis */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003743}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003742}}
 .pager-current {
   /* The current page's list item. */
   font-weight: bold;
@@ -2091,19 +2364,19 @@ span.field-label {
 /* =============================================================================
    Blocks
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003752}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003751}}
 .block {
   /* Block wrapper */
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003757}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003756}}
 #block-social-wall-social-wall,
 #block-discover-poll-discover-poll-opinions {
   border-bottom: 4px solid #F5F5F5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003763}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003762}}
 #block-social-wall-social-wall .user-and-picture,
 #comments .user-and-picture {
   font-size: 12px;
@@ -2112,52 +2385,52 @@ span.field-label {
   text-align: center;
   padding: 0 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003769}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003768}}
 #block-social-wall-social-wall .user-and-picture img,
 #comments .user-and-picture img {
   border: 4px solid #ccc;
   margin-bottom: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003774}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003773}}
 #block-social-wall-social-wall .message-header,
 #comments .message-header {
   color: #999;
   font-size: 13px;
   margin-bottom: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003778}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003777}}
 #block-social-wall-social-wall .message-header .flag-links,
 #comments .message-header .flag-links {
   float: right;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003781}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003780}}
 #block-social-wall-social-wall .message-header .flag-links a,
 #comments .message-header .flag-links a {
   color: #ff3366;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003786}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003785}}
 #block-social-wall-social-wall .message-body,
 #comments .message-body {
   margin-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003792}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003791}}
 #block-social-wall-social-wall #social-wall-main-container {
   margin-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003794}}
 #block-social-wall-social-wall #social-wall-message-items {
   list-style: none;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003798}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003797}}
 #block-social-wall-social-wall #social-wall-message-items li:last-child {
   text-align: center;
   margin: 30px auto;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003804}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003803}}
 #block-social-wall-social-wall .social-wall-message-item {
   overflow: hidden;
   *zoom: 1;
@@ -2165,11 +2438,11 @@ span.field-label {
   padding: 30px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003811}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003810}}
 #comments {
   margin-top: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003813}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003812}}
 #comments .comments--title {
   position: absolute !important;
   height: 1px;
@@ -2178,29 +2451,29 @@ span.field-label {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003816}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003815}}
 #comments article.comment {
   overflow: hidden;
   *zoom: 1;
   border-bottom: 4px solid #F5F5F5;
   padding: 30px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003820}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003819}}
 #comments article.comment.first {
   border-top: 4px solid #F5F5F5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003823}}
 #comments ul.links {
   font-weight: bold;
   float: right;
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003831}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003830}}
 #block-discover-poll-discover-poll-opinions {
   margin-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003834}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003833}}
 #block-discover-poll-discover-poll-opinions .two-columns-layout,
 #block-discover-poll-discover-poll-opinions .three-columns-layout {
   background: #f6f7f8;
@@ -2208,34 +2481,34 @@ span.field-label {
   overflow: hidden;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003839}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003838}}
 #block-discover-poll-discover-poll-opinions .column-results {
   padding: 0 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003842}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003841}}
 #block-discover-poll-discover-poll-opinions .column-highlighted {
   border-left: 7px solid #fff;
   min-height: 200px;
   padding: 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003847}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003846}}
 #block-discover-poll-discover-poll-opinions .three-columns-layout .column-highlighted {
   border-right: 7px solid #fff;
   min-height: 190px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003851}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003850}}
 #block-discover-poll-discover-poll-opinions .links-container-bottom {
   clear: both;
   margin: 20px 0 40px 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003859}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003858}}
 .discover-poll-highlighted h3 {
   font-size: 16px;
   margin: 0 0 5px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003863}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003862}}
 .discover-poll-highlighted .content {
   background-color: #fff;
   color: #999;
@@ -2245,7 +2518,7 @@ span.field-label {
   padding: 10px 20px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003871}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003870}}
 .discover-poll-highlighted .content:after {
   position: absolute;
   bottom: -23px;
@@ -2255,7 +2528,7 @@ span.field-label {
   width: 100%;
   height: 23px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003881}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003880}}
 .discover-poll-highlighted .content-footer {
   font-size: 13px;
   text-align: right;
@@ -2264,28 +2537,28 @@ span.field-label {
 /* =============================================================================
    Menus
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003891}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003890}}
 .menu--expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   *list-style-image: url(../images/menu-expanded.png);
   list-style-type: circle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003898}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003897}}
 .menu--collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   *list-style-image: url(../images/menu-collapsed.png);
   list-style-type: disc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003905}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003904}}
 .menu--leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   *list-style-image: url(../images/menu-leaf.png);
   list-style-type: square;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003912}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003911}}
 .menu a.active {
   /* The active item in a Drupal menu */
   color: #000;
@@ -2294,7 +2567,7 @@ span.field-label {
 /* =============================================================================
    Nodes Commons
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003921}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003920}}
 .new,
 .update {
   /* The "new" or "updated" marker. */
@@ -2303,13 +2576,14 @@ span.field-label {
   /* Remove background highlighting from <mark> in normalize. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003926}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003925}}
 .node {
   margin-bottom: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003927}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003926}}
 .node h2.node-subtitle {
   font-size: 25px;
+  clear: both;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/kacho\/Sites\/discoverprod\/sass\/_modular-styles\.scss}line{font-family:\00003931}}
 .node.node-teaser {

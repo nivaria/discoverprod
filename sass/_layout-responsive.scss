@@ -70,7 +70,6 @@ $zen-auto-include-item-base: false;
 // See the note about $zen-auto-include-item-base above.
 
 #header,
-#content,
 #navigation,
 .region-top-search,
 .region-sidebar-first,
@@ -123,14 +122,41 @@ $zen-auto-include-item-base: false;
   background-color: $headings-color;
 }
 
+.content-header {
+  margin: 0 10px;
+}
+
 /*
  * Navigation bar
  */
 
-@media all and (min-width: 480px) {
+@media all and (max-width: 480px) {
+  .column-price-author {
+    text-align: center;
+  }
+  .field-average-price,
+  .field-average-offer {
+    float: left;
+    margin-right: 10px;
+  }
+  .submitted {
+    float: right;
+  }
+
+}
+
+@media all and (min-width: 481px) {
+  #content {
+    @include zen-grid-item-base();
+  }
   #navigation {
     height: $nav-height;
     text-align: center;
+  }
+  #quicktabs-pie_de_restaurantes {
+    ul.quicktabs-tabs.quicktabs-style-nostyle {
+      margin: 0 -10px;
+    }
   }
 }
 
@@ -139,9 +165,9 @@ $zen-auto-include-item-base: false;
 /*
  * Use 3 grid columns for smaller screens.
  */
-$zen-column-count: 3;
+$zen-column-count: 12;
 
-@media all and (min-width: 480px) and (max-width: 979px) {
+@media all and (min-width: 481px) and (max-width: 979px) {
 
   /*
    * The layout when there is only one sidebar, the left one.
@@ -204,6 +230,150 @@ $zen-column-count: 3;
       }
     }
   }
+
+  /*
+   * Node Type Restaurant Display
+   */
+
+  .node-restaurant-display {
+    .flexslider-area {
+      @include zen-grid-item(12, 1);
+      span.imageeditor-inline-wrapper {
+        display: block;
+      }
+      .field-banner-images img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .extrafield-community-tags,
+    .field-coordinates,
+    .field-text-address {
+      @include zen-grid-item-base();
+    }
+    .extrafield-community-tags {
+      @include zen-clear();
+      @include zen-grid-item(6, 1)
+    }
+    .field-coordinates {
+      @include zen-grid-item(6, 7)
+    }
+    .field-text-address {
+      @include zen-grid-item(6, 7)
+    }
+    .column-content {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+      @include zen-nested-container();
+    }
+
+    .column-price-author {
+      @include zen-grid-item(2, 1);
+    }
+    .column-node-body {
+      @include zen-grid-item(10, 3);
+    }
+
+    .column-additional-info {
+      @include zen-clear();
+      @include zen-nested-container();
+    }
+    // 10 Columns (12 - 2 for column-price-author)
+    $zen-column-count: 10;
+    .column-type-cuisine {
+      @include zen-grid-item(3, 1);
+    }
+    .column-services {
+      @include zen-grid-item(4, 4);
+    }
+    .column-payment-methods {
+      @include zen-grid-item(3, 8);
+    }
+    .column-wrong-info {
+      @include zen-clear();
+      @include zen-grid-item(10, 1);
+    }
+
+    // Reset Back to 12 columns
+    $zen-column-count: 12;
+
+    .column-restaurants-right {
+      @include zen-clear();
+      @include zen-grid-item(12, 1)
+    }
+    .node-bottom {
+      @include zen-clear();
+    }
+  }
+
+  // Reset Back to 12 columns
+  $zen-column-count: 12;
+
+  // Restaurant menu and promos Grid
+  .view-men-s-restaurante {
+    .views-row {
+      @include zen-clear;
+      @include zen-grid-item(12, 1);
+      @include zen-nested-container();
+    }
+
+    .side-price-offer {
+      @include zen-grid-item(3, 1);
+    }
+    .title-description {
+      @include zen-grid-item(8, 4);
+    }
+  }
+
+  // Social Wall Grid
+  // Reset Back to 12 columns
+  $zen-column-count: 12;
+  #block-social-wall-social-wall {
+    @include zen-grid-container();
+  }
+  #social-wall-main-container,
+  #comments {
+    @include zen-grid-item(10, 2);
+    .social-wall-message-item {
+      @include zen-clear();
+    }
+
+    .user-and-picture {
+      @include zen-grid-item(2, 1);
+    }
+    .social-message {
+      @include zen-grid-item(10, 3);
+      float: none;
+    }
+    .addthis_toolbox {
+      @include zen-grid-item(10, 3);
+    }
+  }
+
+  // Reset Back to 12 columns
+  $zen-column-count: 12;
+
+  // Opinions tab
+  #block-discover-poll-discover-poll-opinions {
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+
+    .column-results {
+      @include zen-grid-item(4, 1);
+    }
+    .column-highlighted {
+      @include zen-grid-item(8, 6);
+    }
+    .three-columns-layout {
+      .column-highlighted {
+        @include zen-grid-item(6, 6);
+      }
+      .discover-poll-recommendation {
+        @include zen-grid-item(2, 13);
+      }
+    }
+  }
+
 }
 
 /*
@@ -247,8 +417,122 @@ $zen-column-count: 16;
     }
   }
 
-  .content-header {
-    margin: 0 10px;
+  #block-discover-generic-user-block {
+    float: right;
+    margin: 16px 0 0;
+  }
+
+  #navigation {
+    .not-front & {
+      @include zen-grid-item(8, 5);
+      text-align: left;
+      margin-top: 50px;
+    }
+    .front & {
+      text-align: center;
+    }
+  }
+
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+
+  .sidebar-first {
+    #content { /* Span 4 columns, starting in 2nd column from left. */
+      @include zen-grid-item(12, 5);
+    }
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(4, 1);
+    }
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+
+  .sidebar-second {
+    #content { /* Span 4 columns, starting in 1st column from left. */
+      @include zen-grid-item(12, 1);
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+      @include zen-grid-item(4, 13);
+    }
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+
+  .two-sidebars {
+    #content { /* Span 3 columns, starting in 2nd column from left. */
+      @include zen-grid-item(8, 5);
+    }
+
+    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
+      @include zen-grid-item(4, 1);
+    }
+
+    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
+      @include zen-grid-item(4, 13);
+    }
+  }
+
+
+  /*
+   * Node Type Restaurant Display
+   */
+
+  .node-restaurant-display {
+    .flexslider-area {
+      @include zen-grid-item(12, 1);
+    }
+    .voting-and-map {
+      @include zen-grid-item(4, 13);
+    }
+    .column-content {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+      @include zen-nested-container();
+    }
+
+    // 12 Columns (16 - 4 for restaurant right)
+    $zen-column-count: 12;
+    .column-price-author {
+      @include zen-grid-item(2, 1);
+    }
+    .column-node-body {
+      @include zen-grid-item(10, 3);
+    }
+
+    .column-additional-info {
+      @include zen-clear();
+      @include zen-nested-container();
+    }
+    // 10 Columns (12 - 2 for column-price-author)
+    $zen-column-count: 10;
+    .column-type-cuisine {
+      @include zen-grid-item(3, 1);
+    }
+    .column-services {
+      @include zen-grid-item(4, 4);
+    }
+    .column-payment-methods {
+      @include zen-grid-item(3, 8);
+    }
+    .column-wrong-info {
+      @include zen-clear();
+      @include zen-grid-item(10, 1);
+    }
+
+    $zen-column-count: 16;
+    .column-restaurants-right {
+      @include zen-grid-item(4, 13)
+    }
+    .node-bottom {
+      @include zen-clear();
+    }
   }
 
   // Restaurant menu and promos Grid
@@ -321,131 +605,4 @@ $zen-column-count: 16;
       }
     }
   }
-
-  // Reset Back to 16 columns
-  $zen-column-count: 16;
-
-  #block-discover-generic-user-block {
-    float: right;
-    margin: 16px 0 0;
-  }
-
-  #navigation {
-    .not-front & {
-      @include zen-grid-item(8, 5);
-      text-align: left;
-      margin-top: 50px;
-    }
-    .front & {
-      text-align: center;
-    }
-  }
-
-  /*
-   * The layout when there is only one sidebar, the left one.
-   */
-
-  .sidebar-first {
-    #content { /* Span 4 columns, starting in 2nd column from left. */
-      @include zen-grid-item(12, 5);
-    }
-
-    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(4, 1);
-    }
-  }
-
-  /*
-   * The layout when there is only one sidebar, the right one.
-   */
-
-  .sidebar-second {
-    #content { /* Span 4 columns, starting in 1st column from left. */
-      @include zen-grid-item(12, 1);
-    }
-
-    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(4, 13);
-    }
-  }
-
-  /*
-   * The layout when there are two sidebars.
-   */
-
-  .two-sidebars {
-    #content { /* Span 3 columns, starting in 2nd column from left. */
-      @include zen-grid-item(8, 5);
-    }
-
-    .region-sidebar-first { /* Span 1 column, starting in 1st column from left. */
-      @include zen-grid-item(4, 1);
-    }
-
-    .region-sidebar-second { /* Span 1 column, starting in 5th column from left. */
-      @include zen-grid-item(4, 13);
-    }
-  }
-
-
-  /*
-   * Node Type Restaurant Display
-   */
-
-/* =============================================================================
-   Restaurant Display Nodes
-   ========================================================================== */
-
-  .node-restaurant-display {
-    .flexslider-area {
-      @include zen-grid-item(12, 1);
-    }
-    .voting-and-map {
-      @include zen-grid-item(4, 13);
-    }
-    .column-content {
-      @include zen-clear();
-      @include zen-grid-item(12, 1);
-      @include zen-nested-container();
-    }
-
-    // 12 Columns (16 - 4 for restaurant right)
-    $zen-column-count: 12;
-    .column-price-author {
-      @include zen-grid-item(2, 1);
-    }
-    .column-node-body {
-      @include zen-grid-item(10, 3);
-    }
-
-    .column-additional-info {
-      @include zen-clear();
-      @include zen-nested-container();
-    }
-    // 10 Columns (12 - 2 for column-price-author)
-    $zen-column-count: 10;
-    .column-type-cuisine {
-      @include zen-grid-item(3, 1);
-    }
-    .column-services {
-      @include zen-grid-item(4, 4);
-    }
-    .column-payment-methods {
-      @include zen-grid-item(3, 8);
-    }
-    .column-wrong-info {
-      @include zen-clear();
-      @include zen-grid-item(10, 1);
-    }
-
-    $zen-column-count: 16;
-    .column-restaurants-right {
-      @include zen-grid-item(4, 13)
-    }
-    .node-bottom {
-      @include zen-clear();
-    }
-
-  }
-
 }
