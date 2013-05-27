@@ -177,3 +177,66 @@ function discoverprod_office_hours_formatter_default($vars) {
 
   return $HTML;
 }
+
+
+// Override
+
+/**
+ * Themeable function for Opinions block.
+ *
+ * @param type $vars
+ */
+function discoverprod_discover_poll_opinions($vars){
+  $output = '';
+
+  $node = node_view($vars['node']);
+
+  //Get content for results
+  $results = discover_poll_block_contents('discover_poll_results');
+  //Get content for highlighted
+  $highlighted = discover_poll_block_contents('discover_poll_highlighted');
+
+  if(module_exists('discover_recommendation')){
+    $vid = variable_get('discover_recommendation_vid', NULL);
+    if(!empty($vid)){
+      $rec_nodetypes = variable_get('discover_recommendation_nodetypes', array());
+      if(isset($rec_nodetypes[$node['#node']->type]) && $rec_nodetypes[$node['#node']->type]===$node['#node']->type){
+        $output_recommendation = theme('discover_poll_recommendation', array('node' => $node['#node'], 'vid' => $vid));
+      }
+    }
+  }
+
+  // THREE columns if we have recommendations, TWO columns if not
+  if (strlen($output_recommendation) > 1) {
+    $output .= '<div class="three-columns-layout">';
+  } else {
+    $output .= '<div class="two-columns-layout">';
+  }
+  $output .= '<div class="column-results">';
+  $output .= $results['#markup'];
+  $output .= '</div>';
+
+  if (strlen($highlighted['#markup']) > 1) {
+    $output .= '<div class="column-highlighted">';
+    $output .= $highlighted['#markup'];
+    $output .= '</div>';
+  }
+
+  // Add the recommendations markup if it exists
+  if (strlen($output_recommendation) > 1) {
+    $output .= $output_recommendation;
+  }
+
+  // End of two/three columns layout here.
+  $output .= '</div>';
+
+  if ($node['comments']) {
+    $output .= render($node['comments']);
+  }
+  if(!empty($node['links']['comment'])){
+    $output .= '<div class="links-container-bottom">';
+    $output .= render($node['links']['comment']);
+    $output .= '</div>';
+  }
+  return $output;
+}
