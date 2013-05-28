@@ -113,6 +113,12 @@
       <?php print flag_create_link('i_have_been_there', $node->nid); ?>
       <?php print flag_create_link('bookmarks', $node->nid); ?>
     </div>
+    <?php if (isset($content['field_video_collection']) || isset($content['extrafield_gpx'])): ?>
+      <div class="video-route-popups">
+        <?php print render($content['extrafield_gpx']); ?>
+        <?php print render($content['field_video_collection']); ?>
+      </div>
+    <?php endif; ?>
   </div>
 
   <?php if (isset($content['extrafield_community_tags']) || isset($content['field_organizer'])): ?>
@@ -125,6 +131,7 @@
   <div class="column-content">
     <div class="column-price-author">
       <?php print render($content['field_average_price']); ?>
+      <?php print render($content['extrafield_children_offer']); ?>
       <?php print render($content['field_average_offer']); ?>
     </div>
     <div class="column-node-body">
@@ -156,7 +163,7 @@
   </div>
 
   <div class="column-node-right">
-    <?php print render($node_right_region); ?>
+    <?php print render($region['node_right']); ?>
   </div>
 
   <div class="node-bottom">
@@ -164,7 +171,7 @@
       // We hide the comments and links now so that we can render them later.
       // hide($content['comments']);
       // hide($content['links']);
-      // print render($content);
+      print render($content);
     ?>
   </div>
 

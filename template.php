@@ -81,7 +81,17 @@ function discoverprod_preprocess_page(&$variables, $hook) {
 
 
 function discoverprod_preprocess_node(&$variables, $hook) {
-  // $variables['sample_variable'] = t('Lorem ipsum.');
+
+  // Add Node Right region to node types only
+  if ($blocks = block_get_blocks_by_region('node_right')) {
+    $variables['region']['node_right'] = $blocks;
+  } else {
+    $variables['region']['node_right'] = array();
+  }
+
+  // Get the context blocks for the sidebar_second region .
+  $reaction = context_get_plugin('reaction', 'block');
+  $variables['region']['node_right'] = $reaction->block_get_blocks_by_region('node_right');
 
   // Optionally, run node-type-specific preprocess functions, like
   // discoverprod_preprocess_node_page() or discoverprod_preprocess_node_story().
@@ -91,16 +101,16 @@ function discoverprod_preprocess_node(&$variables, $hook) {
   }
 }
 
-// Insert variables in  restaurant_display node types
+// Insert variables in restaurant_display node types
 function discoverprod_preprocess_node_restaurant_display(&$vars) {
 
-  // Add Restaurants Right region to Restaurant node types only
-  if ($blocks = block_get_blocks_by_region('restaurant_right')) {
-    $vars['restaurant_right'] = $blocks;
-  }
-  // Get the context blocks for the sidebar_second region .
-  $reaction = context_get_plugin('reaction', 'block');
-  $vars['restaurant_right'] = $reaction->block_get_blocks_by_region('restaurant_right');
+}
+
+// Insert variables in plan_display node types
+function discoverprod_preprocess_node_plan_display(&$vars) {
+
+  // Insert Booking block in template
+  $vars['booking_block'] = module_invoke('discover_booking', 'block_view', 'booking_block');
 }
 
 /**
@@ -195,6 +205,7 @@ function discoverprod_discover_poll_opinions($vars){
   $results = discover_poll_block_contents('discover_poll_results');
   //Get content for highlighted
   $highlighted = discover_poll_block_contents('discover_poll_highlighted');
+  $output_recommendation = '';
 
   if(module_exists('discover_recommendation')){
     $vid = variable_get('discover_recommendation_vid', NULL);

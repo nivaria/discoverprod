@@ -93,7 +93,8 @@ $zen-auto-include-item-base: false;
 .column-highlighted,
 .discover-poll-recommendation,
 
-#block-social-wall-social-wall
+#block-social-wall-social-wall,
+#block-quicktabs-all-in-the-plan
 
  {
   @include zen-grid-item-base();
@@ -155,6 +156,7 @@ $zen-auto-include-item-base: false;
   }
   #quicktabs-pie_de_restaurantes,
   #block-quicktabs-plans-quick-tabs {
+    @include zen-clear();
     ul.quicktabs-tabs.quicktabs-style-nostyle {
       margin: 0 -10px;
     }
@@ -553,9 +555,14 @@ $zen-column-count: 16;
 
     .booking-calendar {
       @include zen-grid-item(5, 1);
+      @include box-sizing(border-box);
+      padding-right: 15px;
+      border-right: 4px solid #F5F5F5;
     }
     .time-schedule form {
-      @include zen-grid-item(4, 6);
+      @include zen-grid-item(5, 6);
+      @include box-sizing(border-box);
+      padding-left: 15px;
     }
     .column-additional-first {
       @include zen-grid-item(2, 1);
@@ -566,6 +573,12 @@ $zen-column-count: 16;
     .column-additional-last {
       @include zen-grid-item(4, 6);
     }
+  }
+
+  // 12 Columns
+  $zen-column-count: 16;
+  #block-quicktabs-all-in-the-plan {
+    @include zen-grid-item(12, 1);
   }
 
 

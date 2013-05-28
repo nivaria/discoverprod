@@ -162,7 +162,7 @@
   </div>
 
   <div class="column-node-right">
-    <?php print render($node_right_region); ?>
+    <?php print render($region['node_right']); ?>
   </div>
 
   <div class="node-bottom">
