@@ -614,7 +614,8 @@ span.field-label { /* The inline field label used by the Fences module */
 /* Quicktabs Black */
 
 #quicktabs-pie_de_restaurantes,
-#block-quicktabs-plans-quick-tabs {
+#block-quicktabs-plans-quick-tabs,
+#quicktabs-explore_quick_tabs {
   .quicktabs_main.quicktabs-style-nostyle {
     padding: 0;
     clear: both;
@@ -982,8 +983,21 @@ span.field-label { /* The inline field label used by the Fences module */
         position: relative;
         text-align: center;
         width: 160px !important;
-        .field-description-field {
-          font-size: 12px;;
+        h3 {
+          color: #666;
+          font-family: $arial;
+          font-size: 13px;
+          line-height: 16px;
+          margin: 10px 0;
+        }
+        .field-description-field,
+        .field-body {
+          font-size: 12px;
+        }
+        .field-commerce-price {
+          color: #000;
+          font-family: $quicksand;
+          font-size: 25px;
         }
         .read-more {
           text-transform: uppercase;
@@ -1043,6 +1057,12 @@ article.node {
   &.node-teaser {
     margin-bottom: 0;
   }
+  .field-coordinates {
+    margin-bottom: 10px;
+  }
+  .field-text-address {
+    font-size: 13px;
+  }
   .field-average-price,
   .field-average-offer {
     color: #000;
@@ -1051,17 +1071,16 @@ article.node {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 13px;
-    width: 60px;
+    width: 64px;
     height: 47px;
     padding-top: 40px;
-    padding-right: 27px;
+    padding-right: 25px;
     text-align: right;
   }
   .field-average-offer {
     color: #fff;
     background: url(../images/avg_offer.png) no-repeat 0 0;
   }
-
   .time-schedule {
     padding: 40px 0;
     border-bottom: 4px solid #F5F5F5;
@@ -1076,6 +1095,17 @@ article.node {
     }
     a:hover, a:active {
       color: $primary-color;
+    }
+  }
+  .column-wrong-info {
+    color: #999;
+    margin-bottom: 30px 0;
+    font-size: 13px;
+    font-style: italic;
+    a {
+      color: $primary-color;
+      font-style: normal;
+      font-weight: bold;
     }
   }
 }
@@ -1138,14 +1168,39 @@ article.node {
   left: 20px;
   .field-recommendation-discover,
   .extrafield-voting-general {
-   float: left;
+    float: left;
+    background-color: $secondary-color;
+    color: #fff;
+    font-family: $quicksand;
+    @include drop-style;
   }
   .field-recommendation-discover {
-   width: 50px;
-   height: 50px;
-   margin-right: 10px;
+    background: #000;
+    color: #fff;
+    display: block;
+  }
+  .field-recommendation-discover {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
   }
 }
+
+#block-quicktabs-all-in-the-plan {
+  .badges {
+    .field-recommendation-discover {
+      width: 40px;
+      height: 40px;
+      @include border-radius(100%);
+    }
+    .extrafield-voting-general {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+}
+
 
 .video-route-popups {
   position: absolute;
@@ -1211,17 +1266,6 @@ article.node {
   .field-timetable-text {
     font-size: 15px;
   }
-  .column-wrong-info {
-    color: #999;
-    margin-bottom: 30px 0;
-    font-size: 13px;
-    font-style: italic;
-    a {
-      color: $primary-color;
-      font-style: normal;
-      font-weight: bold;
-    }
-  }
   .extrafield-community-tags {
     background-color: #f2f2f2;
     margin-bottom: 20px;
@@ -1239,12 +1283,6 @@ article.node {
     .comment-vote {
       text-transform: uppercase;
     }
-  }
-  .field-coordinates {
-    margin-bottom: 10px;
-  }
-  .field-text-address {
-    font-size: 13px;
   }
 }
 
@@ -1331,6 +1369,13 @@ article.node {
       text-decoration: none;
       text-transform: uppercase;
     }
+  }
+  .column-price-author .children-offer {
+    color: $secondary-color;
+    display: block;
+    font-weight: bold;
+    margin: 12px 0;
+    text-align: center;
   }
   .column-additional-last {
     h3.field-label {

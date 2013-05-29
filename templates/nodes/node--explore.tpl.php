@@ -121,41 +121,30 @@
     <?php endif; ?>
   </div>
 
-  <?php if (isset($content['extrafield_community_tags']) || isset($content['field_organizer'])): ?>
+  <?php if (isset($content['extrafield_community_tags']) || isset($content['field_coordinates']) || isset($content['field_text_address'])): ?>
     <div class="voting-and-map">
-      <?php print render($content['field_organizer']); ?>
       <?php print render($content['extrafield_community_tags']); ?>
+      <?php print render($content['field_coordinates']); ?>
+      <?php print render($content['field_text_address']); ?>
     </div>
   <?php endif; ?>
 
   <div class="column-content">
-    <div class="column-price-author">
-      <?php print render($content['field_average_price']); ?>
-      <?php print render($content['extrafield_children_offer']); ?>
-      <?php print render($content['field_average_offer']); ?>
-    </div>
     <div class="column-node-body">
       <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>
       <?php print render($content['body']); ?>
 
-      <div class="time-schedule">
-        <?php print $booking_block['content']; ?>
-      </div>
-
       <div class="column-additional-info">
-        <?php if (isset($content['field_languages'])): ?>
-          <div class="column-additional-first"><?php print render($content['field_languages']); ?></div>
+        <?php if (isset($content['field_cuisine_types'])): ?>
+          <div class="column-additional-first"><?php print render($content['field_cuisine_types']); ?></div>
         <?php endif; ?>
 
         <?php if (isset($content['field_services'])): ?>
           <div class="column-additional-middle"><?php print render($content['field_services']); ?></div>
         <?php endif; ?>
 
-        <?php if (isset($content['field_meeting_point'])): ?>
-          <div class="column-additional-last">
-            <?php print render($content['field_meeting_point']); ?>
-            <?php print render($content['field_meeting_point_description']); ?>
-          </div>
+        <?php if (isset($content['extrafield_wrong_info'])): ?>
+          <div class="column-wrong-info"><?php print render($content['extrafield_wrong_info']); ?></div>
         <?php endif; ?>
       </div>
     </div>

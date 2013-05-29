@@ -527,7 +527,7 @@ $zen-column-count: 16;
    * Node Type Restaurant Display
    */
 
-  .node-restaurant-display {
+  article.node-restaurant-display {
     // 10 Columns (12 - 2 for column-price-author)
     $zen-column-count: 10;
     .column-additional-first {
@@ -549,7 +549,7 @@ $zen-column-count: 16;
    * Node Type Plan Display
    */
 
-  .node-plan-display {
+  article.node-plan-display {
     // 10 Columns (12 - 2 for column-price-author)
     $zen-column-count: 10;
 
@@ -574,6 +574,24 @@ $zen-column-count: 16;
       @include zen-grid-item(4, 6);
     }
   }
+
+
+  /*
+   * Node Type Explore
+   */
+
+  article.node-explore {
+    // 12 Columns (16 - 4 for restaurant right)
+    $zen-column-count: 12;
+    .column-node-body {
+      @include zen-grid-item(12, 1);
+    }
+    .column-wrong-info {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
 
   // 12 Columns
   $zen-column-count: 16;

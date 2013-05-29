@@ -93,86 +93,28 @@
       <?php endif; ?>
       <?php print render($title_suffix); ?>
 
+      <?php if ($display_submitted): ?>
+        <p class="submitted">
+          <?php print $user_picture; ?>
+          <?php print $submitted; ?>
+        </p>
+      <?php endif; ?>
+
       <?php if ($unpublished): ?>
         <p class="unpublished"><?php print t('Unpublished'); ?></p>
       <?php endif; ?>
     </header>
   <?php endif; ?>
 
-  <?php // dsm($content); ?>
+  <?php
+    // We hide the comments and links now so that we can render them later.
+    hide($content['comments']);
+    hide($content['links']);
+    print render($content);
+  ?>
 
-  <div class="flexslider-area">
-    <?php print render($content['field_image_collection']); ?>
-    <?php print render($content['extrafield_addthis']); ?>
-    <div class="badges">
-      <?php print render($content['field_recommendation_discover']); ?>
-      <?php print render($content['extrafield_voting_general']); ?>
-    </div>
-    <div class="flag-links">
-      <?php print flag_create_link('i_want_to_go', $node->nid); ?>
-      <?php print flag_create_link('i_have_been_there', $node->nid); ?>
-      <?php print flag_create_link('bookmarks', $node->nid); ?>
-    </div>
-    <?php if (isset($content['field_video_collection']) || isset($content['extrafield_gpx'])): ?>
-      <div class="video-route-popups">
-        <?php print render($content['extrafield_gpx']); ?>
-        <?php print render($content['field_video_collection']); ?>
-      </div>
-    <?php endif; ?>
-  </div>
+  <?php print render($content['links']); ?>
 
-  <?php if (isset($content['extrafield_community_tags']) || isset($content['field_organizer'])): ?>
-    <div class="voting-and-map">
-      <?php print render($content['field_organizer']); ?>
-      <?php print render($content['extrafield_community_tags']); ?>
-    </div>
-  <?php endif; ?>
-
-  <div class="column-content">
-    <div class="column-price-author">
-      <?php print render($content['field_average_price']); ?>
-      <?php print render($content['extrafield_children_offer']); ?>
-      <?php print render($content['field_average_offer']); ?>
-    </div>
-    <div class="column-node-body">
-      <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>
-      <?php print render($content['body']); ?>
-
-      <div class="time-schedule">
-        <?php print $booking_block['content']; ?>
-      </div>
-
-      <div class="column-additional-info">
-        <?php if (isset($content['field_languages'])): ?>
-          <div class="column-additional-first"><?php print render($content['field_languages']); ?></div>
-        <?php endif; ?>
-
-        <?php if (isset($content['field_services'])): ?>
-          <div class="column-additional-middle"><?php print render($content['field_services']); ?></div>
-        <?php endif; ?>
-
-        <?php if (isset($content['field_meeting_point'])): ?>
-          <div class="column-additional-last">
-            <?php print render($content['field_meeting_point']); ?>
-            <?php print render($content['field_meeting_point_description']); ?>
-          </div>
-        <?php endif; ?>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="column-node-right">
-    <?php print render($region['node_right']); ?>
-  </div>
-
-  <div class="node-bottom">
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      // hide($content['comments']);
-      // hide($content['links']);
-      // print render($content);
-    ?>
-  </div>
+  <?php print render($content['comments']); ?>
 
 </article><!-- /.node -->
