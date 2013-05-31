@@ -71,6 +71,7 @@ stylesheets[all][] = css/discover_poll.css
 
 scripts[] = js/script.js
 scripts[] = js/customAjaxRegisterModal.js
+scripts[] = js/jquery.masonry.min.js
 
 
 
