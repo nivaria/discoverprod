@@ -70,7 +70,7 @@
     <div class="author"><?php print $author; ?></div>
   </div>
   <div class="comment-body social-message">
-    <div class="message-header"><?php print $created; ?><span class="flag-links"><?php print flag_create_link('highlight_comment', $node->nid); ?></span></div>
+    <div class="message-header"><?php print $created; ?><span class="flag-links"><?php print flag_create_link('highlight_comment', $comment->cid); ?></span></div>
     <div class="message-body">
       <?php if ($status == 'comment-unpublished'): ?>
         <p class="unpublished"><?php print t('Unpublished'); ?></p>

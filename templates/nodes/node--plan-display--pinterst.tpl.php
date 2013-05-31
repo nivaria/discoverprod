@@ -83,38 +83,57 @@
  * @see template_process()
  */
 ?>
-<article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article class="node-<?php print $node->nid; ?>"<?php print $attributes; ?>>
+  <?php // dsm($content); ?>
 
-  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
-    <header>
-      <?php print render($title_prefix); ?>
-      <?php if (!$page && $title): ?>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
 
-      <?php if ($display_submitted): ?>
-        <p class="submitted">
-          <?php print $user_picture; ?>
-          <?php print $submitted; ?>
-        </p>
-      <?php endif; ?>
+<!--
+links (Array, 7 elements)
+field_recommendation_discover (Array, 16 elements)
+field_list_image (Array, 16 elements)
+field_average_price (Array, 16 elements)
+field_average_offer (Array, 16 elements)
+extrafield_i_want_to_go (Array, 3 elements)
+extrafield_i_have_been_there (Array, 3 elements)
+product:title_field (Array, 18 elements)
+product:field_image (Array, 18 elements)
+product:commerce_price (Array, 18 elements)
+product:field_children_price (Array, 4 elements)
+product:field_body (Array, 18 elements)
+product:sku (Array, 6 elements)
+extrafield_view_more (Array, 3 elements)
+product:status (Array, 6 elements)
+-->
 
-      <?php if ($unpublished): ?>
-        <p class="unpublished"><?php print t('Unpublished'); ?></p>
-      <?php endif; ?>
-    </header>
-  <?php endif; ?>
+  <?php print render($title_suffix); ?>
 
-  <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    print render($content);
-  ?>
+  <div class="top-features">
+    <?php print render($content['field_list_image']); ?>
+    <div class="badges">
+      <?php print render($content['extrafield_voting_general']); ?>
+      <?php print render($content['field_recommendation_discover']); ?>
+    </div>
+    <div class="flag-links-overlay">
+      <?php print flag_create_link('i_want_to_go', $node->nid); ?>
+      <?php print flag_create_link('i_have_been_there', $node->nid); ?>
+      <div class="count-visits">
+        <?php print render($content['extrafield_i_want_to_go']); ?>
+        <?php print render($content['extrafield_i_have_been_there']); ?>
+      </div>
+    </div>
+  </div>
 
-  <?php print render($content['links']); ?>
+  <div class="pin-content">
+    <?php if (!$page && $title): ?>
+      <h3 class="pin-title"><?php print $title; ?></a></h3>
+    <?php endif; ?>
+    <?php
+      // Unset comments and links.
+      unset($content['comments']);
+      unset($content['links']);
+      print render($content);
+    ?>
+  </div>
 
-  <?php print render($content['comments']); ?>
 
 </article><!-- /.node -->
