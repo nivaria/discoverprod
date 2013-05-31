@@ -38,6 +38,14 @@
       }
     );
 
+    // jQuery Masonry for Plans
+    $('.pinterest-view').masonry({
+      itemSelector : '.pinterest-item',
+      isResizable : true,
+      isFitWidth: true,
+      columnWidth : 218
+    });
+
   });
 
 })(jQuery, Drupal, this, this.document);
