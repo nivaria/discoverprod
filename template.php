@@ -251,3 +251,12 @@ function discoverprod_discover_poll_opinions($vars){
   }
   return $output;
 }
+
+function discoverprod_preprocess_page(&$variables) {
+  $status = drupal_get_http_header("status");
+  if ($status == '404 Not Found') {
+    $variables['theme_hook_suggestions'][] = 'page__404';
+  } else if ($status == '403 Forbidden') {
+    $variables['theme_hook_suggestions'][] = 'page__403';
+  }
+}
