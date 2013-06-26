@@ -78,14 +78,20 @@
       </div>
       <div class="content">
         <div class="error-text">
-          <span>¿tal vez estabas buscando...?</span>
-          <span>Los mejores planes y restaurantes de Canarias</span>
-          <span>Lugares increíbles donde perderte</span>
-          <span>Pertenecer al club exclusivo de Discover para disfrutar de las mejores ofertas</span>
+          <span class="error-title-oops">OOPS!</span>
+          <span class="error-title"><?php print t('NO ENCONTRAMOS LA PÁGINA QUE BUSCAS'); ?></span>
+          <span class="error-title"><?php print t('¿Tal vez estabas buscando...?'); ?></span>
+          <span><a href="/es"><?php print t('Los mejores planes y restaurantes de Canarias'); ?></a></span>
+          <span><a href="/es"><?php print t('Lugares increíbles donde perderte'); ?></a></span>
+          <span><a href="/es"><?php print t('Pertenecer al club exclusivo de Discover para disfrutar de las mejores ofertas'); ?></a></span>
         </div>
+<?php
+  $search_block = module_invoke('search', 'block_view', 'form');
+?>
         <div class="error-searcher">
-          <span>O puedes buscar lo que quieras</span>
-          <span>Si sigues con problemas, contacta con nosotros</span>
+          <span class="searcher-text"><?php print t('O puedes buscar lo que quieras'); ?></span>
+          <?php print render($search_block['content']); ?>
+          <span><?php print t('Si sigues con problemas'); ?>, <a href="content/contacto"><?php print t('contact with us'); ?></a></span>
         </div>
 
       </div>
