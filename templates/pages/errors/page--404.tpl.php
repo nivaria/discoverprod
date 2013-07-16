@@ -8,7 +8,7 @@
  */
 ?>
 
-<div id="page">
+<div id="page" class="page-error">
 
   <header class="header" id="header" role="banner">
 
@@ -65,9 +65,6 @@
         <?php print render($page['highlighted']); ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?>
-          <h1 class="page--title title" id="page-title">Ooops No encontramos la página que buscas</h1>
-        <?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php print $messages; ?>
         <?php print render($tabs); ?>
@@ -78,20 +75,24 @@
       </div>
       <div class="content">
         <div class="error-text">
-          <span class="error-title-oops">OOPS!</span>
-          <span class="error-title"><?php print t('NO ENCONTRAMOS LA PÁGINA QUE BUSCAS'); ?></span>
-          <span class="error-title"><?php print t('¿Tal vez estabas buscando...?'); ?></span>
-          <span><a href="/es"><?php print t('Los mejores planes y restaurantes de Canarias'); ?></a></span>
-          <span><a href="/es"><?php print t('Lugares increíbles donde perderte'); ?></a></span>
-          <span><a href="/es"><?php print t('Pertenecer al club exclusivo de Discover para disfrutar de las mejores ofertas'); ?></a></span>
+          <div class="error-text-inner">
+            <div class="error-title-oops">OOPS!</div>
+            <div class="error-title"><?php print t('NO ENCONTRAMOS LA PÁGINA QUE BUSCAS'); ?></div>
+            <div class="error-title-small"><?php print t('¿Tal vez estabas buscando...?'); ?></div>
+            <div><a href="/es"><?php print t('Los mejores planes y restaurantes de Canarias'); ?></a></div>
+            <div><a href="/es"><?php print t('Lugares increíbles donde perderte'); ?></a></div>
+            <div class="delimiter"><a href="/es"><?php print t('Pertenecer al club exclusivo de Discover para disfrutar de las mejores ofertas'); ?></a></div>
+          </div>
         </div>
 <?php
   $search_block = module_invoke('search', 'block_view', 'form');
 ?>
         <div class="error-searcher">
-          <span class="searcher-text"><?php print t('O puedes buscar lo que quieras'); ?></span>
-          <?php print render($search_block['content']); ?>
-          <span><?php print t('Si sigues con problemas'); ?>, <a href="content/contacto"><?php print t('contact with us'); ?></a></span>
+          <div class="error-searcher-inner">
+            <span class="searcher-text"><?php print t('O puedes buscar lo que quieras'); ?></span>
+            <?php print render($search_block['content']); ?>
+            <div class="contact-link"><?php print t('Si sigues con problemas'); ?>, <a href="content/contacto"><?php print t('contact with us'); ?></a></div>
+          </div>
         </div>
 
       </div>

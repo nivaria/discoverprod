@@ -74,6 +74,93 @@
   }
 }
 
+
+/* =============================================================================
+   Branding header
+   ========================================================================== */
+
+.page-error {
+  background-color: $secondary-color;
+  #main {
+    background-color: $secondary-color;
+    position: relative;
+  }
+  .error-text,
+  .error-searcher {
+    background-color: #fff;
+    color: $headings-color;
+  }
+  .error-text {
+    width: 420px;
+    min-height: 420px;
+    max-width: 100%;
+    > div {
+      text-align: center;
+    }
+    .error-title-oops,
+    .error-title,
+    .error-title-small {
+      color: $headings-color;
+      font-family: $headings-font;
+      font-weight: bold;
+    }
+    .error-title-oops {
+      background: transparent url(../images/explore.png) center top no-repeat;
+      color: $secondary-color;
+      font-size: 60px;
+      line-height: 85px;
+      padding-top: 20px;
+    }
+    .error-title {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 30px;
+    }
+    .error-title-small {
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .delimiter {
+      margin-top: 5px;
+      padding-top: 5px;
+      border-top: 1px solid #999;
+    }
+  }
+  .error-text-inner {
+    padding: 30px 60px;
+  }
+  .error-searcher {
+    width: 460px;
+    max-width: 100%;
+    .form-text {
+      height: 42px;
+      margin-right: 3%;
+      width: 70%;
+    }
+    .form-submit {
+      background: transparent;
+      border: 0 none;
+      text-align: center;
+      width: 24%;
+      @include button($secondary-color);
+      @include size-large-40;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+  .error-searcher-inner {
+    padding: 25px 50px;
+  }
+  .contact-link {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
 /* =============================================================================
    Branding header
    ========================================================================== */

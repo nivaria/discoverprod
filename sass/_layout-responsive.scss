@@ -378,6 +378,12 @@ $zen-column-count: 12;
     }
   }
 
+  // Error page bubble
+  .page-error {
+    .error-text {
+      @include border-radius(120px 120px 0 120px);
+    }
+  }
 }
 
 /*
@@ -672,5 +678,19 @@ $zen-column-count: 16;
     }
   }
 
+  // Error page bubble
+  .page-error {
+    .error-text {
+      @include border-radius(50% 50% 0 50%);
+    }
+  }
 
+  // Error page search
+  .page-error {
+    .error-searcher {
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+    }
+  }
 }
