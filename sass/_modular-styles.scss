@@ -850,11 +850,62 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 #block-social-wall-social-wall {
+  #discover-message-ajax-form-builder {
+    background-color: #f3f3f3;
+    padding: 10px;
+    position: relative;
+    @include box-shadow(4px 4px 7px rgba(0,0,0,0.25));
+    .form-type-textarea {
+      margin: 0 0 10px 0;
+    }
+    label {
+      display: none;
+    }
+    .form-textarea {
+      border: 0 none;
+      color: $text-color;
+      font-style: italic;
+    }
+    .grippie {
+      display: none;
+      position: absolute;
+    }
+    #edit-body-counter {
+      color: lighten($text-color, 30%);
+      font-size: 11px;
+      font-style: italic;
+    }
+    .form-submit {
+      float: right;
+      font-size: 12px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    #edit-uploads {
+      background: transparent url(../images/photo.png) no-repeat left 6px;
+      border: 0 none;
+      color: #999;
+      float: none;
+      font-size: 11px;
+      padding-left: 22px;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 21px;
+      background: transparent url(../images/comment-arrow.png) no-repeat center center;
+      top: 12px;
+      left: -9px;
+    }
+  }
   #social-wall-main-container {
     margin-top: 30px;
   }
   #social-wall-message-items {
+    border-top: 4px solid #F5F5F5;
     list-style: none;
+    margin-top: 30px;
     padding: 0;
     li:last-child {
       text-align: center;
@@ -2299,7 +2350,8 @@ div.custom-ajax-register-modal #user-pass .ajax-register-links .first a {
 }
 
 #block-discover-generic-user-block .ajax-register-links .last a,
-div.custom-ajax-register-modal #user-pass .ajax-register-links .last a {
+div.custom-ajax-register-modal #user-pass .ajax-register-links .last a,
+#block-social-wall-social-wall #discover-message-ajax-form-builder .form-submit {
   @include button($secondary-color);
   @include size-regular;
 }
