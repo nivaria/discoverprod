@@ -84,13 +84,10 @@
             <div class="delimiter"><a href="/es"><?php print t('Pertenecer al club exclusivo de Discover para disfrutar de las mejores ofertas'); ?></a></div>
           </div>
         </div>
-<?php
-  $search_block = module_invoke('search', 'block_view', 'form');
-?>
         <div class="error-searcher">
           <div class="error-searcher-inner">
             <span class="searcher-text"><?php print t('O puedes buscar lo que quieras'); ?></span>
-            <?php print render($search_block['content']); ?>
+            <?php print render($search_box_block); ?>
             <div class="contact-link"><?php print t('Si sigues con problemas'); ?>, <a href="content/contacto"><?php print t('contact with us'); ?></a></div>
           </div>
         </div>
