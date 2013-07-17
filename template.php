@@ -247,6 +247,7 @@ function discoverprod_discover_poll_opinions($vars) {
 function discoverprod_preprocess_page(&$variables) {
   $status = drupal_get_http_header("status");
   if ($status == '404 Not Found') {
+    $variables['search_box_block'] = module_invoke('search', 'block_view', 'form');
     $variables['theme_hook_suggestions'][] = 'page__404';
   } else if ($status == '403 Forbidden') {
     $variables['theme_hook_suggestions'][] = 'page__403';
