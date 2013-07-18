@@ -253,3 +253,52 @@ function discoverprod_preprocess_page(&$variables) {
     $variables['theme_hook_suggestions'][] = 'page__403';
   }
 }
+
+// Insert variables in lift_page node types
+function discoverprod_preprocess_node_lift_page(&$vars) {
+  $links = array();
+  $url = $vars['node_url'];
+  global $language;
+  $url_language = '/'. $language->language .'/';
+  if (strrpos($url, $url_language) == 0) {
+    $url = substr($url, strlen($url_language));
+  }
+  foreach ($vars['content']['field_lift_collection'] as $key => $value)  {
+    if (is_array($value) && isset($value['entity'])) {
+      foreach ($value['entity']['field_collection_item'] as $key2 => $value2) {
+        $field_collection = 'field_lift_collection_'. $key2;
+        $title = (isset($value2['title_field'])?$value2['title_field'][0]['#markup']:'');
+        $links[] = l(($key!='0'?$key:t('Intro')), $url, array('attributes' => array('title' => $title), 'fragment' => $field_collection));
+      }
+    }
+  }
+  $link = array(
+    '#items' => $links,
+    '#theme' => 'item_list',
+  );
+  $vars['links_lift_page'] = $link;
+}
+
+/**
+ * Overrides template_preprocess_field
+ * @param type $variables 
+ */
+function discoverprod_preprocess_field(&$variables) {
+  $variables['classes'] = implode(' ', $variables['classes_array']);
+  $variables['attributes'] = empty($variables['attributes_array']) ? '' : drupal_attributes($variables['attributes_array']);
+  $variables['title_attributes'] = empty($variables['title_attributes_array']) ? '' : drupal_attributes($variables['title_attributes_array']);
+  $variables['content_attributes'] = empty($variables['content_attributes_array']) ? '' : drupal_attributes($variables['content_attributes_array']);
+  foreach ($variables['items'] as $delta => $item) {
+    $variables['item_attributes'][$delta] = empty($variables['item_attributes_array'][$delta]) ? '' : drupal_attributes($variables['item_attributes_array'][$delta]);
+  }
+  if ($variables['field_name_css'] == 'field-lift-collection') {
+    $collection_item = array();
+    foreach ($variables['items'] as $key => $value)  {
+      foreach ($value['entity']['field_collection_item'] as $key2 => $value2) {
+        $collection_item[$key2] = $value2;
+      }
+    }
+    $variables['field_lift_collection'] = $collection_item;
+  }
+}
+
