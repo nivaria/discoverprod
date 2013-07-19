@@ -13,7 +13,7 @@
 <div class="<?php print $classes; ?>">
     <div class="title">
         <h3 class="title">
-            <?php print t('This plan is organized by'); ?>
+            <?php print t('Organized by'); ?>
         </h3>
     </div>
     <div class="organizer">
