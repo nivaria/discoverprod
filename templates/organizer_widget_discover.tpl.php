@@ -13,7 +13,7 @@
 <section class="<?php print $classes; ?>">
   <div class="title">
     <h3 class="title">
-      <?php print t('Organized by'); ?>
+      <?php print t('Plan organized by'); ?>
     </h3>
   </div>
   <div class="organizer">
