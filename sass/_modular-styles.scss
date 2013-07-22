@@ -1083,6 +1083,48 @@ span.field-label { /* The inline field label used by the Fences module */
   }
 }
 
+#block-nodeblock-174 {
+  background-color: #333;
+  border: 4px solid #666;
+  padding: 15px;
+  text-align: center;
+  h2.block-title {
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .faq-ask-button {
+    @include button($primary-color);
+    @include size-regular;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
+#block-views-taxonom-as-block {
+  background-color: #F8F8F8;
+  padding: 20px 10px;
+  h2.block-title {
+    border-bottom: 1px solid #DFDFDF;
+    font-size: 14px;
+    font-family: $quicksand;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .views-row a {
+    color: $text-color;
+    font-size: 13px;
+    margin-left: 5px;
+    line-height: 25px;
+    padding-left: 15px;
+    background: transparent url(../images/faq-bullet.png) no-repeat left center;
+
+  }
+}
+
 
 /* =============================================================================
    Quicktabs block carousels
@@ -1635,8 +1677,103 @@ article.node {
 
 
 /* =============================================================================
+   FAQ Nodes
+   ========================================================================== */
+
+article.node-faq {
+  &.node-teaser {
+    margin: 30px 0;
+    padding-bottom: 30px;
+    border-bottom: 4px solid #F8F8F8;
+    .node-title {
+      margin: 0;
+    }
+    .views-row-last & {
+      padding-bottom: 0;
+      border-bottom: 0 none;
+    }
+    .more-info-link {
+      background-color: #F8F8F8;
+      float: right;
+      display: block;
+      width: 50px;
+      height: 50px;
+      @include border-radius(100px);
+      .view-more {
+        color: $primary-color;
+        display: block;
+        font-family: $quicksand;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+    #node_faq_teaser_group_hidden {
+      border: 0 none;
+      padding: 0;
+      legend {
+        display: none;
+      }
+      .fieldset-wrapper {
+        margin-top: 20px;
+      }
+      &.collapsed  {
+        height: 0;
+        .fieldset-wrapper {
+          margin: 0;
+        }
+      }
+    }
+    .group_not_found {
+      line-height: 20px;
+      text-align: right;
+    }
+    .not-found-faq-text {
+      color: #999;
+      font-size: 12px;
+    }
+    .not-found-faq-link a {
+      @include button($primary-color);
+      @include size-regular;
+      margin-left: 10px;
+      float: right;
+    }
+  }
+  .field-faq-tags {
+    color: $primary-color;
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 0 52px 0 0;
+    @include clearfix;
+    li {
+      display: inline;
+      list-style: none;
+      a {
+        height: 12px;
+        line-height: 12px;
+        display: block;
+        float: left;
+        margin: 0 13px 0 0;
+        padding: 0 13px 0 0;
+        border-right: 1px solid #000;
+        text-decoration: none;
+      }
+      &:last-child a {
+        border: 0 none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+/* =============================================================================
    Date Picker
    ========================================================================== */
+
 .ui-widget {
   color: $arial;
 }
@@ -1907,6 +2044,43 @@ article.node {
     font-family: $arial;
     font-size: 16px;
     margin: 0;
+  }
+}
+
+/* =============================================================================
+   Views Exposed FAQ form
+   ========================================================================== */
+
+#views-exposed-form-faqs-nodeindex-page {
+  background-color: #F8F8F8;
+  padding: 20px;
+  .views-exposed-widget {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  .form-item-search-api-views-fulltext {
+    float: left;
+    width: 76%;
+    margin-right: 3%;
+  }
+  #edit-search-api-views-fulltext {
+    color: $text-color;
+    font-size: 15px;
+    line-height: 20px;
+    height: 50px;
+    padding: 15px;
+    width: 100%;
+  }
+  #edit-submit-faqs-nodeindex {
+    @include button($primary-color);
+    @include size-large-50;
+    float: right;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 20%;
   }
 }
 
