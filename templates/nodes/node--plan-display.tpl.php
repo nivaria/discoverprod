@@ -102,7 +102,7 @@
   <?php // dsm($content); ?>
 
   <div class="flexslider-area">
-    <?php print render($content['field_image_collection']); ?>
+    <?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_photos']['field_image_collection']); ?>
     <?php print render($content['extrafield_addthis']); ?>
     <div class="badges">
       <?php print render($content['field_recommendation_discover']); ?>
@@ -113,10 +113,10 @@
       <?php print flag_create_link('i_have_been_there', $node->nid); ?>
       <?php print flag_create_link('bookmarks', $node->nid); ?>
     </div>
-    <?php if (isset($content['field_video_collection']) || isset($content['extrafield_gpx'])): ?>
+    <?php if (isset($content['group_administration']['group_rich']['group_rich_tabs']['group_videos']['field_video_collection']) || isset($content['extrafield_gpx'])): ?>
       <div class="video-route-popups">
         <?php print render($content['extrafield_gpx']); ?>
-        <?php print render($content['field_video_collection']); ?>
+        <?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_videos']['field_video_collection']); ?>
       </div>
     <?php endif; ?>
   </div>
@@ -135,20 +135,20 @@
       <?php print render($content['field_average_offer']); ?>
     </div>
     <div class="column-node-body">
-      <h2 class="node-subtitle"><?php print render($content['field_subtitle']); ?></h2>
-      <?php print render($content['body']); ?>
+      <h2 class="node-subtitle"><?php print render($content['group_administration']['group_basic']['field_subtitle']); ?></h2>
+      <?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_describe_plan']['body']); ?>
 
       <div class="time-schedule">
         <?php print $booking_block['content']; ?>
       </div>
 
       <div class="column-additional-info">
-        <?php if (isset($content['field_languages'])): ?>
-          <div class="column-additional-first"><?php print render($content['field_languages']); ?></div>
+        <?php if (isset($content['group_administration']['group_promote']['field_languages'])): ?>
+          <div class="column-additional-first"><?php print render($content['group_administration']['group_promote']['field_languages']); ?></div>
         <?php endif; ?>
 
-        <?php if (isset($content['field_services'])): ?>
-          <div class="column-additional-middle"><?php print render($content['field_services']); ?></div>
+        <?php if (isset($content['group_administration']['group_promote']['group_perfect_options']['field_to_go_with'])): ?>
+          <div class="column-additional-middle"><?php print render($content['group_administration']['group_promote']['group_perfect_options']['field_to_go_with']); ?></div>
         <?php endif; ?>
 
         <?php if (isset($content['field_meeting_point'])): ?>
