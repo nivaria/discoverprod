@@ -143,8 +143,15 @@
       </div>
 
       <div class="column-additional-info">
-        <?php if (isset($content['group_administration']['group_promote']['field_languages'])): ?>
-          <div class="column-additional-first"><?php print render($content['group_administration']['group_promote']['field_languages']); ?></div>
+        <?php if ((isset($content['group_administration']['group_promote']['field_languages'])) || (isset($content['group_administration']['group_promote']['field_category']))):  ?>
+          <div class="column-additional-first">
+            <?php if (isset($content['group_administration']['group_promote']['field_languages'])): ?>
+              <?php print render($content['group_administration']['group_promote']['field_languages']); ?>
+            <?php endif; ?>
+            <?php if (isset($content['group_administration']['group_promote']['field_category'])): ?>
+              <?php print render($content['group_administration']['group_promote']['field_category']); ?>
+            <?php endif; ?>
+          </div>
         <?php endif; ?>
 
         <?php if (isset($content['group_administration']['group_promote']['group_perfect_options']['field_to_go_with'])): ?>
