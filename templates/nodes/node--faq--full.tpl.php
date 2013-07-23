@@ -85,10 +85,10 @@
 ?>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
+  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || $title): ?>
     <header>
       <?php print render($title_prefix); ?>
-      <?php if (!$page && $title): ?>
+      <?php if ($title): ?>
         <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
@@ -111,7 +111,6 @@
     hide($content['comments']);
     hide($content['links']);
     print render($content);
-
   ?>
 
 </article><!-- /.node -->

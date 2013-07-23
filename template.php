@@ -87,19 +87,20 @@ function discoverprod_preprocess_node(&$variables, $hook) {
     // Get the context blocks for the sidebar_second region .
     $reaction = context_get_plugin('reaction', 'block');
     $variables['region']['node_right'] = $reaction->block_get_blocks_by_region('node_right');
-    // Optionally, run node-type-specific preprocess functions, like
-    // discoverprod_preprocess_node_page() or discoverprod_preprocess_node_story().
-    $function = __FUNCTION__ . '_' . $variables['node']->type;
-    if (function_exists($function)) {
-      $function($variables, $hook);
-    }
   }
-  
+
+  // Optionally, run node-type-specific preprocess functions, like
+  // discoverprod_preprocess_node_page() or discoverprod_preprocess_node_story().
+  $function = __FUNCTION__ . '_' . $variables['node']->type;
+  if (function_exists($function)) {
+    $function($variables, $hook);
+  }
+
 }
 
 // Insert variables in restaurant_display node types
 function discoverprod_preprocess_node_restaurant_display(&$vars) {
-  
+
 }
 
 // Insert variables in plan_display node types
@@ -107,6 +108,19 @@ function discoverprod_preprocess_node_plan_display(&$vars) {
 
   // Insert Booking block in template
   $vars['booking_block'] = module_invoke('discover_booking', 'block_view', 'booking_block');
+}
+
+// Insert variables in faq node types
+function discoverprod_preprocess_node_faq(&$vars) {
+  $flag_be_useful = flag_create_link('be_useful', $node->nid);
+  switch ($vars['view_mode']) {
+   case 'full':
+    $vars['content']['group_not_found']['#prefix'] .= $flag_be_useful;
+    break;
+   case 'teaser':
+    $vars['content']['group_hidden']['group_not_found']['#prefix'] .= $flag_be_useful;
+    break;
+  }
 }
 
 /**
@@ -281,7 +295,7 @@ function discoverprod_preprocess_node_lift_page(&$vars) {
 
 /**
  * Overrides template_preprocess_field
- * @param type $variables 
+ * @param type $variables
  */
 function discoverprod_preprocess_field(&$variables) {
   $variables['classes'] = implode(' ', $variables['classes_array']);

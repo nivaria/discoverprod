@@ -1234,6 +1234,9 @@ article.node {
     clear: both;
   }
   margin-bottom: 80px;
+  &.node-faq {
+    margin-bottom: 20px;
+  }
   &.node-teaser {
     margin-bottom: 0;
   }
@@ -1726,20 +1729,6 @@ article.node-faq {
         }
       }
     }
-    .group_not_found {
-      line-height: 20px;
-      text-align: right;
-    }
-    .not-found-faq-text {
-      color: #999;
-      font-size: 12px;
-    }
-    .not-found-faq-link a {
-      @include button($primary-color);
-      @include size-regular;
-      margin-left: 10px;
-      float: right;
-    }
   }
   .field-faq-tags {
     color: $primary-color;
@@ -1766,6 +1755,79 @@ article.node-faq {
         padding: 0;
       }
     }
+  }
+  .group_not_found {
+    line-height: 20px;
+    margin: 20px 0;
+    text-align: right;
+    @include clearfix;
+  }
+  .not-found-faq-text {
+    color: #999;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .not-found-faq-link a {
+    margin-left: 10px;
+    float: right;
+    text-transform: uppercase;
+  }
+  .flag-be-useful {
+    float: left;
+    .flag-action {
+      @include button($secondary-color);
+      @include size-regular;
+      background: $secondary-color url(../images/flag-useful.png) no-repeat right center;
+      padding-right: 30px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#webform-client-form-203 {
+  background-color: #f3f3f3;
+  padding: 20px 15px;
+  position: relative;
+  max-width: 100%;
+  width: 490px;
+  @include box-shadow(4px 4px 7px rgba(0,0,0,0.25));
+  .form-item {
+    margin: 10px 0;
+  }
+  .form-type-textarea {
+    margin: 0 0 10px 0;
+  }
+  .form-text,
+  .form-textarea {
+    border: 0 none;
+    color: $text-color;
+    font-style: italic;
+    width: 100%;
+  }
+  .grippie {
+    display: none;
+    position: absolute;
+  }
+  #edit-actions {
+    text-align: right;
+    margin-top: 15px;
+  }
+  .form-submit {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 10px 7px 10px;
+    border-color: transparent transparent #f3f3f3 transparent;
+    top: -5px;
+    right: 45px;
   }
 }
 
@@ -2605,14 +2667,16 @@ div.custom-ajax-register-modal {
    ========================================================================== */
 
 #block-discover-generic-user-block .ajax-register-links .first a,
-div.custom-ajax-register-modal #user-pass .ajax-register-links .first a {
+div.custom-ajax-register-modal #user-pass .ajax-register-links .first a,
+article.node-faq .not-found-faq-link a {
   @include button($primary-color);
   @include size-regular;
 }
 
 #block-discover-generic-user-block .ajax-register-links .last a,
 div.custom-ajax-register-modal #user-pass .ajax-register-links .last a,
-#block-social-wall-social-wall #discover-message-ajax-form-builder .form-submit {
+#block-social-wall-social-wall #discover-message-ajax-form-builder .form-submit,
+#webform-client-form-203  .form-submit {
   @include button($secondary-color);
   @include size-regular;
 }
