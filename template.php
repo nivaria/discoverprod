@@ -112,7 +112,7 @@ function discoverprod_preprocess_node_plan_display(&$vars) {
 
 // Insert variables in faq node types
 function discoverprod_preprocess_node_faq(&$vars) {
-  $flag_be_useful = flag_create_link('be_useful', $node->nid);
+  $flag_be_useful = flag_create_link('be_useful', $vars['nid']);
   switch ($vars['view_mode']) {
    case 'full':
     $vars['content']['group_not_found']['#prefix'] .= $flag_be_useful;
@@ -259,12 +259,18 @@ function discoverprod_discover_poll_opinions($vars) {
 }
 
 function discoverprod_preprocess_page(&$variables) {
+
   $status = drupal_get_http_header("status");
   if ($status == '404 Not Found') {
     $variables['search_box_block'] = module_invoke('search', 'block_view', 'form');
     $variables['theme_hook_suggestions'][] = 'page__404';
   } else if ($status == '403 Forbidden') {
     $variables['theme_hook_suggestions'][] = 'page__403';
+  } else {
+    if (isset($variables['node'])) {
+      $node_type = $variables['node']->type;
+      $variables['theme_hook_suggestions'][] = 'page__' . $node_type;
+    }
   }
 }
 
