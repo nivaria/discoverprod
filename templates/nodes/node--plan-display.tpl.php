@@ -130,7 +130,7 @@
 
   <div class="column-content">
     <div class="column-price-author">
-      <?php print render($content['group_administration']['group_dates_prices']['group_prices_discounts']['field_average_price']); ?>
+      <?php print render($content['group_administration']['group_dates_prices']['group_prices_discount']['field_average_price']); ?>
       <?php print render($content['extrafield_children_offer']); ?>
       <?php print render($content['group_administration']['group_discover_generic']['field_average_offer']); ?>
     </div>
