@@ -105,7 +105,7 @@
     <?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_photos']['field_image_collection']); ?>
     <?php print render($content['extrafield_addthis']); ?>
     <div class="badges">
-      <?php print render($content['field_recommendation_discover']); ?>
+      <?php print render($content['group_administration']['group_discover_generic']['field_recommendation_discover']); ?>
       <?php print render($content['extrafield_voting_general']); ?>
     </div>
     <div class="flag-links">
