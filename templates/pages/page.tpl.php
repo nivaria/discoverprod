@@ -97,7 +97,12 @@
 
   </div>
 
+  <?php print render($page['footer_social']); ?>
   <?php print render($page['footer']); ?>
+  <?php print render($page['footer_second']); ?>
+  <?php print render($page['footer_third']); ?>
+  <?php print render($page['footer_menu']); ?>
+  <?php print render($page['footer_banners']); ?>
 
 </div>
 

@@ -98,7 +98,12 @@ regions[content]        = Content
 regions[restaurant_right] = Restaurant Right
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[footer]         = Footer
+regions[footer_social]  = Footer Social
+regions[footer]         = Footer First Row
+regions[footer_second]  = Footer Second Row
+regions[footer_third]   = Footer Third Row
+regions[footer_menu]    = Footer Menu
+regions[footer_banners] = Footer Banners
 regions[bottom]         = Page bottom
 
 ; The page_top and page_bottom regions are hidden, which means they will not
