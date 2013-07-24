@@ -678,6 +678,23 @@ $zen-column-count: 16;
     }
   }
 
+  // Contact form
+  #webform-client-form-172 {
+    #webform-component-tus-datos-contacto,
+    #webform-component-datos-contactar-contacto {
+      .form-item {
+        width: 47%;
+        float: left;
+      }
+      .fieldset-wrapper > div:last-child {
+        float: right;
+      }
+    }
+    #webform-component-que-quieres-contarnos-contacto--asunto-contacto {
+      width: 47%;
+    }
+  }
+
   // Error page bubble
   .page-error {
     .error-text {

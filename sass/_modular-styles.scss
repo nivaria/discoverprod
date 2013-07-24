@@ -452,7 +452,7 @@
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *background-image: url(../images/message-24-warning.png);
   }
-  border-color: #ed5;
+  border-color: $secondary-color;
 }
 
 .messages-error {
@@ -462,7 +462,7 @@
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *background-image: url(../images/message-24-error.png);
   }
-  border-color: #ed541d;
+  border-color: $secondary-color;
 
   p.error { /* Core/module installation error messages. */
     color: #333;
@@ -482,8 +482,8 @@
 
 .ok,
 %ok {
-  background-color: #f8fff0;
-  color: #234600;
+  background-color: lighten($primary-color, 42%);
+  color: darken($primary-color, 20%);
 }
 
 .warning,
@@ -494,8 +494,8 @@
 
 .error,
 %error {
-  background-color: #fef5f1;
-  color: #8c2e0b;
+  background-color: lighten($secondary-color, 38%);
+  color: darken($secondary-color, 25%);
 }
 
 /* =============================================================================
@@ -1223,7 +1223,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .new,
 .update { /* The "new" or "updated" marker. */
-  color: #c00;
+  color: $secondary-color;
   background-color: transparent; /* Remove background highlighting from <mark> in normalize. */
 }
 
@@ -1460,7 +1460,7 @@ article.node {
     font-size: 16px;
   }
   .oh-current-closed {
-    color: #CC0000;
+    color: $secondary-color;
   }
   .oh-current-open {
     color: darken($primary-color, 10%);
@@ -1833,6 +1833,84 @@ article.node-faq {
 
 
 /* =============================================================================
+   Contact Page
+   ========================================================================== */
+
+.page-node-172 {
+
+}
+
+#webform-client-form-172 {
+  fieldset {
+    border: 0 none;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  legend {
+    color: #000;
+    font-family: $quicksand;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  label {
+    display: none;
+  }
+  #edit-submitted-privacidad-contacto label {
+    display: inline;
+    font-size: 12px;
+    a {
+      color: #00A4F8;
+    }
+  }
+  #edit-actions {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 4px solid #F5F5F5;
+    #edit-submit {
+      padding-left: 40px;
+      padding-right: 40px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#block-nodeblock-175,
+#block-nodeblock-176 {
+  background-color: #F2F2F2;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 30px;
+  .block-title {
+    color: #000;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  padding: 20px 20px 10px 20px;
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+#block-nodeblock-175 {
+  border: 1px solid #DFDFDF;
+  .contact-icon {
+    img {
+      position: absolute;
+    }
+    p {
+      padding-left: 40px;
+    }
+  }
+}
+
+#block-nodeblock-176 {
+  .map {
+    margin: 0 -20px 15px -20px;
+  }
+}
+
+/* =============================================================================
    Date Picker
    ========================================================================== */
 
@@ -2167,7 +2245,7 @@ article.node-faq {
   input.error,
   textarea.error,
   select.error { /* Highlight the form elements that caused a form submission error */
-    border: 1px solid #c00;
+    border: 1px solid $secondary-color;
   }
 
   .description { /* The descriptive help text (separate from the label) */
@@ -2183,7 +2261,7 @@ article.node-faq {
 }
 
 .form-required { /* The part of the label that indicates a required field */
-  color: #c00;
+  color: $secondary-color;
 }
 
 label.option {
@@ -2212,7 +2290,8 @@ select.form-select {
   background: $white;
   border: 1px solid #DFDFDF;
   color: #999;
-  padding: 5px 10px;
+  font-size: 13px;
+  padding: 9px 15px;
 }
 select.form-select {
   padding: 0;
@@ -2694,7 +2773,8 @@ div.custom-ajax-register-modal #user-login .ajax-register-links .first a,
   @include size-login;
 }
 
-#block-social-wall-social-wall #social-wall-show-more {
+#block-social-wall-social-wall #social-wall-show-more,
+#webform-client-form-172 #edit-submit {
   @include button($primary-color);
   @include size-large-40;
 }
