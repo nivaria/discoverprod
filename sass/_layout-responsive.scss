@@ -53,7 +53,6 @@ $zen-auto-include-item-base: false;
 }
 
 #footer {
-  padding: 30px 0;
 }
 
 /*
@@ -118,9 +117,15 @@ $zen-auto-include-item-base: false;
   @include zen-grid-container();
 }
 
-#header,
-#footer {
+#header{
   background-color: $headings-color;
+}
+
+#footer,
+#footer-second,
+#footer-third,
+#footer-banners {
+  background-color: $footer-color;
 }
 
 .content-header {
@@ -675,6 +680,21 @@ $zen-column-count: 16;
       .discover-poll-recommendation {
         @include zen-grid-item(2, 13);
       }
+    }
+  }
+
+  // Footer
+
+  #footer,
+  #footer-second,
+  #footer-third {
+    .fixed-width-container {
+      @include clearfix;
+    }
+    .block {
+      width: 23%;
+      padding: 20px 1%;
+      float: left;
     }
   }
 

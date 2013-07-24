@@ -1189,6 +1189,125 @@ span.field-label { /* The inline field label used by the Fences module */
 
 
 /* =============================================================================
+   Footer
+   ========================================================================== */
+
+.social-links {
+  > div a {
+    background: transparent url(../images/social-sprite.png) no-repeat left top;
+    display: block;
+    float: left;
+    margin-right: 7px;
+    width: 35px;
+    height: 35px;
+    text-indent: -9999px;
+  }
+  .twitter a {
+    background-position: -41px 0;
+  }
+  .facebook a {
+    background-position: -82px 0;
+  }
+  .pinterest a {
+    background-position: -123px 0;
+  }
+  .email a {
+    background-position: -165px 0;
+  }
+}
+
+#footer,
+#footer-second {
+  .fixed-width-container {
+    border-bottom: 2px solid #404040;
+    padding: 10px 0;
+  }
+}
+
+#footer,
+#footer-second,
+#footer-third {
+  color: #fff;
+  font-size: 13px;
+  .block {
+    margin: 0;
+  }
+  .block-title {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  a {
+    color: #999999;
+  }
+}
+
+#footer-menu {
+  background-color: #404040;
+  padding: 30px 0 10px 0;
+  .block {
+    margin: 0;
+  }
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    li {
+      display: inline;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      a {
+        color: #fff;
+        display: inline-block;
+        font-family: $quicksand;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    &:after {
+      content:' ';
+      display:inline-block;
+      width: 100%;
+      height: 0;
+    }
+  }
+
+}
+
+#footer-banners {
+  padding: 30px 0 20px 0;
+  .block {
+    background-color: $secondary-color;
+    color: #fff;
+    font-family: $quicksand;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+    margin: 0;
+    padding: 20px;
+    p {
+      margin: 0;
+    }
+  }
+  .block-title {
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 34px;
+    line-height: 35px;
+    margin: 0 50px;
+  }
+}
+
+
+/* =============================================================================
    Menus
    ========================================================================== */
 
