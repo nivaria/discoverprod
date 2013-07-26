@@ -1247,12 +1247,37 @@ span.field-label { /* The inline field label used by the Fences module */
   }
 }
 
+#footer-social,
 #footer-menu {
   background-color: #404040;
-  padding: 30px 0 10px 0;
   .block {
     margin: 0;
   }
+}
+
+#footer-social {
+  padding: 20px 0;
+  @include clearfix;
+  .block-title {
+    color: #fff;
+    display: inline;
+    font-size: 18px;
+    font-family: $quicksand;
+    line-height: 35px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .social-links {
+    float: right;
+    width: 210px;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+#footer-menu {
+  padding: 30px 0 10px 0;
   ul.menu {
     margin: 0;
     padding: 0;
