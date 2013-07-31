@@ -27,8 +27,9 @@
  * @see template_process()
  */
 ?>
-<?php 
-  foreach($field_lift_collection as $key => $value) {
+<?php
+  if (isset($field_lift_collection)){
+    foreach($field_lift_collection as $key => $value) {
 ?>
 <div id="field_lift_collection_<?php print $key; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
@@ -38,5 +39,6 @@
   </div>
 </div>
 <?php
+    }
   }
 ?>
