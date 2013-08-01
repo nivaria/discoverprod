@@ -33,9 +33,65 @@
 ?>
 <div id="field_lift_collection_<?php print $key; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
+    <?php if(isset($value['field_image'])): ?>
+      <div class="collection-image"><?php print render($value['field_image']); ?></div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_pretitle']) || isset($value['title_field'])): ?>
+      <div class="collection-titles">
+        <?php if(isset($value['field_pretitle'])): ?>
+          <div class="collection-pretitle"><?php print render($value['field_pretitle']); ?></div>
+        <?php endif; ?>
+        <?php if(isset($value['title_field'])): ?>
+          <div class="collection-title"><?php print render($value['title_field']); ?></div>
+        <?php endif; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_top_left'])): ?>
+      <div class="collection-top-left"><?php print render($value['field_top_left']); ?></div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_top_right'])): ?>
+      <div class="collection-top-right"><?php print render($value['field_top_right']); ?></div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_middle_left']) || isset($value['field_middle_right'])): ?>
+      <div class="collection-container-middle clearfix">
+        <?php if(isset($value['field_middle_left'])): ?>
+          <div class="collection-middle-left-wrapper"><div class="collection-middle-left">
+            <?php print render($value['field_middle_left']); ?>
+          </div></div>
+        <?php endif; ?>
+
+        <?php if(isset($value['field_middle_right'])): ?>
+          <div class="collection-middle-right-wrapper"><div class="collection-middle-right">
+            <?php print render($value['field_middle_right']); ?>
+          </div></div>
+        <?php endif; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_middle'])): ?>
+      <div class="collection-middle"><?php print render($value['field_middle']); ?></div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_bottom_left'])): ?>
+      <div class="collection-bottom-left"><?php print render($value['field_bottom_left']); ?></div>
+    <?php endif; ?>
+
+    <?php if(isset($value['field_bottom_right'])): ?>
+      <div class="collection-bottom-right"><?php print render($value['field_bottom_right']); ?></div>
+    <?php endif; ?>
+
     <?php
-      print render($value);
+    /**
+     * Print any unused values
+     */
     ?>
+    <?php print render($value); ?>
+
+
   </div>
 </div>
 <?php

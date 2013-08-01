@@ -659,6 +659,52 @@ $zen-column-count: 16;
 
   // Reset Back to 16 columns
   $zen-column-count: 16;
+  // Lift Node
+  .field-lift-collection {
+    @include zen-nested-container();
+    position: relative;
+  }
+  .collection-top-left,
+  .collection-bottom-left {
+    @include zen-clear();
+    @include zen-grid-item(7, 2);
+  }
+  .collection-top-right,
+  .collection-bottom-right {
+    @include zen-grid-item(6, 10);
+  }
+  .collection-middle,
+  .collection-container-middle {
+    @include zen-clear();
+    @include zen-grid-item(14, 2);
+  }
+  .collection-titles {
+    position: absolute;
+    top: 140px;
+    left: 270px;
+    width: 400px;
+  }
+  .collection-container-middle {
+    background: url(../images/lift-big-arrow.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .collection-middle-left-wrapper {
+    width: 52%;
+    float: left;
+  }
+
+  .collection-middle-left {
+
+  }
+
+  .collection-middle-right-wrapper {
+    width: 48%;
+    float: right;
+  }
+
+  .collection-middle-right {
+
+  }
 
   // Opinions tab
   #block-discover-poll-discover-poll-opinions {

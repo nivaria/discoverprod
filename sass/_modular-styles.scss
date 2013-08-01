@@ -1371,6 +1371,12 @@ span.field-label { /* The inline field label used by the Fences module */
   background-color: transparent; /* Remove background highlighting from <mark> in normalize. */
 }
 
+#content {
+  ul li {
+    margin-bottom: rhythm(1);
+  }
+}
+
 article.node {
   h2.node-subtitle {
     font-size: 25px;
@@ -1822,6 +1828,68 @@ article.node {
   }
 }
 
+
+/* =============================================================================
+   Lift Nodes
+   ========================================================================== */
+.node-type-lift-page {
+  #content {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 13px;
+    #{headings()} {
+      line-height: 1em;
+      margin-top: 40px;
+    }
+  }
+}
+
+.collection-titles {
+  background-color: #fff;
+  color: $primary-color;
+  padding: 20px;
+  font-family: $quicksand;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  .collection-title {
+    color: $headings-color;
+    font-size: 24px;
+    line-height: 25px;
+    margin: 10px 0 5px 0;
+  }
+}
+
+.collection-image,
+.collection-top-left,
+.collection-bottom-left,
+.collection-top-right,
+.collection-bottom-right,
+.collection-middle,
+.collection-container-middle {
+  margin-top: 60px;
+  > #{headings()} {
+    &:first-child {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.collection-middle-left,
+.collection-middle-right {
+  padding: 40px 30px 20px 30px;
+  text-align: center;
+
+}
+
+.collection-middle-left {
+  padding: 40px 60px 20px 40px;
+  color: #fff;
+  #{headings()} {
+    color: #fff;
+  }
+}
 
 /* =============================================================================
    FAQ Nodes
