@@ -108,6 +108,7 @@ function discoverprod_preprocess_node_plan_display(&$vars) {
 
   // Insert Booking block in template
   $vars['booking_block'] = module_invoke('discover_booking', 'block_view', 'booking_block');
+  $vars['tabs_multimedia_plan_block'] = module_invoke('quicktabs', 'block_view', 'plan_tabs');
   $vars['tabs_estuvieron_quieren_ir_block'] = module_invoke('quicktabs', 'block_view', 'estuvieron_y_quieren_ir');
   $vars['share_this_plan_block'] = module_invoke('discover_generic', 'block_view', 'share_this_plan');
 }
