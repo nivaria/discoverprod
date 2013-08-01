@@ -102,7 +102,8 @@
   <?php // dsm($content); ?>
 
   <div class="flexslider-area">
-    <?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_photos']['field_image_collection']); ?>
+    <!--?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_photos']['field_image_collection']); ?-->
+    <?php print render($tabs_multimedia_plan_block['content']); ?>
     <?php print render($content['extrafield_addthis']); ?>
     <div class="badges">
       <?php print render($content['group_administration']['group_discover_generic']['field_recommendation_discover']); ?>
@@ -113,12 +114,12 @@
       <?php print flag_create_link('i_have_been_there', $node->nid); ?>
       <?php print flag_create_link('bookmarks', $node->nid); ?>
     </div>
-    <?php if (isset($content['group_administration']['group_rich']['group_rich_tabs']['group_videos']['field_video_collection']) || isset($content['extrafield_gpx'])): ?>
+    <!--?php if (isset($content['group_administration']['group_rich']['group_rich_tabs']['group_videos']['field_video_collection']) || isset($content['extrafield_gpx'])): ?>
       <div class="video-route-popups">
-        <?php print render($content['extrafield_gpx']); ?>
-        <?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_videos']['field_video_collection']); ?>
+        < ?php print render($content['extrafield_gpx']); ?>
+        < ?php print render($content['group_administration']['group_rich']['group_rich_tabs']['group_videos']['field_video_collection']); ?>
       </div>
-    <?php endif; ?>
+    < ?php endif; ?-->
   </div>
 
   <?php if (isset($content['extrafield_community_tags']) || isset($content['field_organizer'])): ?>
