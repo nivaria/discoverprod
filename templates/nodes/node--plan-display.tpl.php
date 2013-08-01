@@ -171,6 +171,8 @@
 
   <div class="column-node-right">
     <?php print render($region['node_right']); ?>
+    <?php print render($tabs_estuvieron_quieren_ir_block['content']); ?>
+    <?php print render($share_this_plan_block['content']); ?>
   </div>
 
   <div class="node-bottom">
